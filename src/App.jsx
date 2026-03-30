@@ -590,17 +590,17 @@ const UI_STRINGS = {
     sectionBaseLabel: "Base Style",
     sectionAddonsTitle: "Add-ons",
     sectionAddonsLabel: "Add-ons",
-    sectionSpaTitle: "Spa & care",
+    sectionSpaTitle: "Spa & Care",
     sectionSpaLabel: "Spa & Care",
-    sectionOthersTitle: "Others",
+    sectionOthersTitle: "Other Services",
     sectionOthersLabel: "Others",
-    sectionDiscountTitle: "Discount",
+    sectionDiscountTitle: "Discounts",
     sectionDiscountLabel: "Discount",
 
     perFinger: "/ nail",
 
     otherProduct: "Product add-on",
-    otherService: "Other services",
+    otherService: "Additional services",
 
     discountNone: "None",
     discount95: "5% off",
@@ -658,9 +658,9 @@ const UI_STRINGS = {
     csvFilename: "nail_revenue_${month}.csv",
 
     greetingMorning: "Good morning, ${name}! Hope your bookings are full today!",
-    greetingAfternoon: "Good afternoon, ${name}! Have a great shift!",
+    greetingAfternoon: "Good afternoon, ${name}! Have a great day!",
     greetingNight:
-      "Good evening, ${name}! Don’t forget to rest and eat well — you’ve got this!",
+      "Good evening, ${name}! Don’t forget to rest and eat well!",
   },
 };
 
@@ -735,30 +735,30 @@ const PRICE_LABELS = {
   },
   en: {
     removal: {
-      "本店 / 純卸甲": "In-salon / removal only",
-      "本店 / 卸甲續作": "In-salon / removal + redo",
-      "他店 / 純卸甲": "Other salon / removal only",
-      "他店 / 卸甲續作": "Other salon / removal + redo",
+      "本店 / 純卸甲": "In-salon removal only",
+      "本店 / 卸甲續作": "In-salon removal + new set",
+      "他店 / 純卸甲": "Removal from other salon",
+      "他店 / 卸甲續作": "Removal from other salon + new set",
     },
     base: {
-      透明建甲: "Clear extension",
-      單色: "Solid color",
-      跳色: "Accent color",
-      法式: "French",
-      貓眼: "Cat eye",
+      透明建甲: "Clear Builder Gel",
+      單色: "Solid Color",
+      跳色: "Accent Nails",
+      法式: "French Tips",
+      貓眼: "Cat Eye",
       漸層: "Ombre",
     },
     addons: {
-      延甲: "Extension",
-      水晶: "Crystal",
-      手繪: "Hand-painted",
+      延甲: "Nail extension",
+      水晶: "Crystals",
+      手繪: "Hand-painted design",
       裝飾: "Decor",
     },
     spa: {
-      手部基礎: "Hands basic",
-      手部深層: "Hands deep",
-      足部基礎: "Feet basic",
-      足部深層: "Feet deep",
+      手部基礎: "Basic Manicure",
+      手部深層: "Deluxe Manicure",
+      足部基礎: "Basic Pedicure",
+      足部深層: "Deluxe Pedicure",
     },
   },
 };
