@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========= Global Scroll Settings ========= */
+
+/* 隱藏 scrollbar（但保留可滾動） */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* App 主滾動容器（你之前用過） */
+.app-scroll {
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 避免 iOS 點擊藍色反白 */
+* {
+  -webkit-tap-highlight-color: transparent;
+}

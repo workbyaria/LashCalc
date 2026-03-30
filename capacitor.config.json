@@ -1,0 +1,9 @@
+{
+  "appId": "com.nailcalc.app",
+  "appName": "NailCalc",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "ios": {
+    "contentInset": "always"
+  }
+}
