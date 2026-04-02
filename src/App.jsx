@@ -1242,7 +1242,10 @@ const App = () => {
     <div
       className="min-h-screen bg-[#F6F1EC] text-[#5F4636]"
       style={{
-        paddingBottom: "calc(140px + env(safe-area-inset-bottom, 0px))",
+        paddingBottom:
+          view === "calculator"
+            ? "calc(116px + env(safe-area-inset-bottom, 0px))"
+            : "calc(40px + env(safe-area-inset-bottom, 0px))",
       }}
     >
       <SplashScreen />
