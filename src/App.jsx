@@ -1298,9 +1298,12 @@ const App = () => {
 
       {view === "calculator" && (
         <div className="p-5 max-w-lg mx-auto space-y-8">
-          <p className="w-full text-center text-[#9F7D6B] text-[12px] font-bold leading-snug py-2.5 px-4 bg-white/60 border border-stone-200 rounded-3xl">
+          <p
+            className="w-full text-center text-[#9F7D6B] font-bold leading-snug py-2.5 px-4 bg-white/60 border border-stone-200 rounded-3xl"
+            style={{ fontSize: theme.fontSize.btnMain }}
+          >
             <span className="block">{greetingLines.line1}</span>
-            <span className="block mt-1 text-[11px] font-semibold text-[#9F7D6B]/90">
+            <span className="block mt-1 font-semibold text-[#9F7D6B]/90">
               {greetingLines.line2}
             </span>
           </p>
