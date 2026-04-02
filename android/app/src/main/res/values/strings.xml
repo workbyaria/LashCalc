@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">NailCalc</string>
-    <string name="title_activity_main">NailCalc</string>
-    <string name="package_name">com.nailcalc.app</string>
-    <string name="custom_url_scheme">com.nailcalc.app</string>
+    <string name="app_name">LashCalc</string>
+    <string name="title_activity_main">LashCalc</string>
+    <string name="package_name">com.lashcalc.app</string>
+    <string name="custom_url_scheme">com.lashcalc.app</string>
 </resources>

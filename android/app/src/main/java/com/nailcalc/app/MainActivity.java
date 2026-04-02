@@ -1,4 +1,4 @@
-package com.nailcalc.app;
+package com.lashcalc.app;
 
 import com.getcapacitor.BridgeActivity;
 

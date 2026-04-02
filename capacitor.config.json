@@ -1,6 +1,6 @@
 {
-  "appId": "com.friendlycatgroup.nailcalc",
-  "appName": "NailCalc",
+  "appId": "com.friendlycatgroup.lashcalc",
+  "appName": "LashCalc",
   "webDir": "dist",
   "bundledWebRuntime": false,
   "ios": {

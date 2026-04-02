@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useEffect } from "react";
 
 /**
- * 美甲算算 NailCalc - 核心組件
+ * 美睫算算 LashCalc - 核心組件
  * 2026 1 20 最新修正並新增營收報表功能
  */
 
@@ -32,7 +32,7 @@ const SplashScreen = () => {
     >
       <div
         className={[
-          "w-20 h-20 bg-[#9F7D6B] rounded-3xl flex items-center justify-center mb-4",
+          "w-20 h-20 bg-[#BA797D] rounded-3xl flex items-center justify-center mb-4",
           "transition-transform duration-500 ease-out",
           isFadingOut ? "scale-[0.98]" : "scale-100",
         ].join(" ")}
@@ -40,7 +40,7 @@ const SplashScreen = () => {
       >
         <img
           src="/logo-mark.png"
-          alt="NailCalc logo"
+          alt="LashCalc logo"
           className="w-20 h-20"
           draggable="false"
         />
@@ -48,14 +48,14 @@ const SplashScreen = () => {
 
       <h1
         className={[
-          "text-xl font-bold tracking-widest text-[#5F4636]",
+          "text-xl font-bold tracking-widest text-[#9E606F]",
           "transition-all duration-500 ease-out",
           isFadingOut
             ? "opacity-0 translate-y-[2px]"
             : "opacity-100 translate-y-0",
         ].join(" ")}
       >
-        NailCalc
+        LashCalc
       </h1>
 
       <style>{`
@@ -325,12 +325,12 @@ const Icon = ({ name, size = 20, className = "" }) => {
 
 // 主題樣式配置
 const theme = {
-  primary: "#FDA4AF",
-  textMain: "#5F4636",
-  textMuted: "#A8A29E",
-  selectedBg: "#EBDCD3",
-  selectedBorder: "#9F7D6B",
-  accent: "#9F7D6B",
+  primary: "#BA797D",
+  textMain: "#9E606F",
+  textMuted: "#A99CA0",
+  selectedBg: "#F1DFDC",
+  selectedBorder: "#BA797D",
+  accent: "#BA797D",
   fontSize: {
     sectionTitle: "1rem",
     label: "0.7rem",
@@ -388,7 +388,7 @@ const getInitialLocale = () => {
 /** @type {Record<AppLocale, Record<string, string>>} */
 const UI_STRINGS = {
   "zh-TW": {
-    appTitle: "美甲算算 NailCalc",
+    appTitle: "美睫算算 LashCalc",
     languageLabel: "介面語言",
     languageHint: "預設會依你的系統語言自動選擇；你也可以在這裡手動覆寫並記住。",
     language_zhTW: "繁體中文",
@@ -401,7 +401,7 @@ const UI_STRINGS = {
     pricingTitle: "價格設定",
     pricingLabel: "Pricing",
 
-    sectionRemovalTitle: "卸甲服務",
+    sectionRemovalTitle: "卸除服務",
     sectionRemovalLabel: "Removal",
     sectionBaseTitle: "款式基礎",
     sectionBaseLabel: "Base Style",
@@ -456,11 +456,23 @@ const UI_STRINGS = {
     baseNamePh: "款式名稱",
     ariaDeleteBase: "刪除款式項目",
 
+    newRemovalTitle: "新增卸除/補睫毛服務項目",
+    removalNamePh: "卸除/補睫毛服務名稱",
+    ariaDeleteRemoval: "刪除卸除/補睫毛服務項目",
+
+    newSpaTitle: "新增 SPA 服務項目",
+    spaNamePh: "SPA 服務名稱",
+    ariaDeleteSpa: "刪除 SPA 服務項目",
+
     errAddonName: "請輸入加購名稱",
     errPrice: "請輸入有效價格",
     errAddonDup: "此加購名稱已存在",
     errBaseName: "請輸入款式名稱",
     errBaseDup: "此款式名稱已存在",
+    errRemovalName: "請輸入卸除/補睫毛服務名稱",
+    errRemovalDup: "此卸除/補睫毛服務名稱已存在",
+    errSpaName: "請輸入 SPA 服務名稱",
+    errSpaDup: "此 SPA 服務名稱已存在",
 
     summaryTitle: "消費明細",
     summaryThanks: "感謝您的預約，祝您有美好的一天！",
@@ -472,7 +484,7 @@ const UI_STRINGS = {
     recordFallback: "其他服務",
 
     csvHeader: "日期時間,施作項目,總金額",
-    csvFilename: "美甲營收報表_${month}.csv",
+    csvFilename: "美睫營收報表_${month}.csv",
 
     greetingMorningLine1: "早安，${name}",
     greetingMorningLine2: "願今天預約也滿滿！",
@@ -482,7 +494,7 @@ const UI_STRINGS = {
     greetingNightLine2: "忙碌中也別忘了好好休息、吃飯喔！",
   },
   "zh-CN": {
-    appTitle: "美甲算算 NailCalc",
+    appTitle: "美睫算算 LashCalc",
     languageLabel: "界面语言",
     languageHint: "默认会跟随你的系统语言；你也可以在这里手动覆盖并记住。",
     language_zhTW: "繁体中文",
@@ -495,7 +507,7 @@ const UI_STRINGS = {
     pricingTitle: "价格设置",
     pricingLabel: "Pricing",
 
-    sectionRemovalTitle: "卸甲服务",
+    sectionRemovalTitle: "卸除服务",
     sectionRemovalLabel: "Removal",
     sectionBaseTitle: "款式基础",
     sectionBaseLabel: "Base Style",
@@ -550,11 +562,23 @@ const UI_STRINGS = {
     baseNamePh: "款式名称",
     ariaDeleteBase: "删除款式项目",
 
+    newRemovalTitle: "新增卸除/补睫毛服务项目",
+    removalNamePh: "卸除/补睫毛服务名称",
+    ariaDeleteRemoval: "删除卸除/补睫毛服务项目",
+
+    newSpaTitle: "新增 SPA 服务项目",
+    spaNamePh: "SPA 服务名称",
+    ariaDeleteSpa: "删除 SPA 服务项目",
+
     errAddonName: "请输入加购名称",
     errPrice: "请输入有效价格",
     errAddonDup: "该加购名称已存在",
     errBaseName: "请输入款式名称",
     errBaseDup: "该款式名称已存在",
+    errRemovalName: "请输入卸除/补睫毛服务名称",
+    errRemovalDup: "此卸除/补睫毛服务名称已存在",
+    errSpaName: "请输入 SPA 服务名称",
+    errSpaDup: "此 SPA 服务名称已存在",
 
     summaryTitle: "消费明细",
     summaryThanks: "感谢您的预约，祝您有美好的一天！",
@@ -566,7 +590,7 @@ const UI_STRINGS = {
     recordFallback: "其他服务",
 
     csvHeader: "日期时间,施作项目,总金额",
-    csvFilename: "美甲营收报表_${month}.csv",
+    csvFilename: "美睫营收报表_${month}.csv",
 
     greetingMorningLine1: "早安，${name}",
     greetingMorningLine2: "愿今天预约也满满！",
@@ -576,7 +600,7 @@ const UI_STRINGS = {
     greetingNightLine2: "忙碌中也别忘了好好休息、吃饭喔！",
   },
   en: {
-    appTitle: "NailCalc",
+    appTitle: "LashCalc",
     languageLabel: "Language",
     languageHint:
       "Defaults to your system language.",
@@ -645,11 +669,23 @@ const UI_STRINGS = {
     baseNamePh: "Style name",
     ariaDeleteBase: "Delete base style item",
 
+    newRemovalTitle: "Add removal/refill service item",
+    removalNamePh: "Removal/refill service name",
+    ariaDeleteRemoval: "Delete removal/refill service item",
+
+    newSpaTitle: "Add SPA service item",
+    spaNamePh: "SPA service name",
+    ariaDeleteSpa: "Delete spa service item",
+
     errAddonName: "Please enter an item name",
     errPrice: "Please enter a valid price",
     errAddonDup: "This item name already exists",
     errBaseName: "Please enter a style name",
     errBaseDup: "This style name already exists",
+    errRemovalName: "Please enter a removal/refill service name",
+    errRemovalDup: "This removal/refill service name already exists",
+    errSpaName: "Please enter a spa service name",
+    errSpaDup: "This spa service name already exists",
 
     summaryTitle: "Receipt",
     summaryThanks: "Thank you for booking, have a great day!",
@@ -687,58 +723,56 @@ const tString = (locale, key, vars) => {
 const PRICE_LABELS = {
   "zh-TW": {
     removal: {
-      "本店 / 純卸甲": "本店 / 純卸甲",
-      "本店 / 卸甲續作": "本店 / 卸甲續作",
-      "他店 / 純卸甲": "他店 / 純卸甲",
-      "他店 / 卸甲續作": "他店 / 卸甲續作",
+      "本店 / 純卸除": "本店 / 純卸除",
+      "本店 / 卸除續作": "本店 / 卸除續作",
+      "他店 / 純卸除": "他店 / 純卸除",
+      "他店 / 卸除續作": "他店 / 卸除續作",
     },
     base: {
-      透明建甲: "透明建甲",
-      單色: "單色",
-      跳色: "跳色",
-      法式: "法式",
-      貓眼: "貓眼",
-      漸層: "漸層",
+      自然款: "自然款",
+      濃密款: "濃密款",
+      造型款: "造型款",
+      客製款: "客製款",
     },
     addons: {
+      "根數(每根)": "根數",
+      下睫毛: "下睫毛",
       延甲: "延甲",
       水晶: "水晶",
       手繪: "手繪",
       裝飾: "裝飾",
     },
     spa: {
-      手部基礎: "手部基礎",
-      手部深層: "手部深層",
-      足部基礎: "足部基礎",
-      足部深層: "足部深層",
+      睫毛SPA: "睫毛SPA",
+      深層清潔: "深層清潔",
+      睫毛角蛋白: "睫毛角蛋白",
     },
   },
   "zh-CN": {
     removal: {
-      "本店 / 純卸甲": "本店 / 纯卸甲",
-      "本店 / 卸甲續作": "本店 / 卸甲续作",
-      "他店 / 純卸甲": "他店 / 纯卸甲",
-      "他店 / 卸甲續作": "他店 / 卸甲续作",
+      "本店 / 純卸除": "本店 / 纯卸除",
+      "本店 / 卸除續作": "本店 / 卸除续作",
+      "他店 / 純卸除": "他店 / 纯卸除",
+      "他店 / 卸除續作": "他店 / 卸除续作",
     },
     base: {
-      透明建甲: "透明延长",
-      單色: "单色",
-      跳色: "跳色",
-      法式: "法式",
-      貓眼: "猫眼",
-      漸層: "渐变",
+      自然款: "自然款",
+      濃密款: "浓密款",
+      造型款: "造型款",
+      客製款: "客制款",
     },
     addons: {
+      "根数(每根)": "根数",
+      下睫毛: "下睫毛",
       延甲: "延长",
       水晶: "水晶",
       手繪: "手绘",
       裝飾: "装饰",
     },
     spa: {
-      手部基礎: "手部基础",
-      手部深層: "手部深层",
-      足部基礎: "足部基础",
-      足部深層: "足部深层",
+      睫毛SPA: "睫毛SPA",
+      深層清潔: "深层清洁",
+      睫毛角蛋白: "睫毛角蛋白",
     },
   },
   en: {
@@ -749,24 +783,23 @@ const PRICE_LABELS = {
       "他店 / 卸甲續作": "Foreign removal + new set",
     },
     base: {
-      透明建甲: "Clear Builder Gel",
-      單色: "Solid Color",
-      跳色: "Accent Nails",
-      法式: "French Tips",
-      貓眼: "Cat Eye",
-      漸層: "Ombre",
+      自然款: "Classic",
+      濃密款: "Volume",
+      造型款: "Design",
+      客製款: "Custom",
     },
     addons: {
+      "根數(每根)": "Root count",
+      下睫毛: "Lower lashes",
       延甲: "Nail Extensions",
       水晶: "Builder Gel",
       手繪: "Hand-painted Designs",
       裝飾: "Nail Art",
     },
     spa: {
-      手部基礎: "Basic Manicure",
-      手部深層: "Deluxe Manicure",
-      足部基礎: "Basic Pedicure",
-      足部深層: "Deluxe Pedicure",
+      睫毛SPA: "Lash SPA",
+      深層清潔: "Deep Cleaning",
+      睫毛角蛋白: "Lash Keratin",
     },
   },
 };
@@ -777,17 +810,40 @@ const priceItemLabel = (locale, cat, key) => {
   return key;
 };
 
-const DEFAULT_ADDONS = { 延甲: 50, 水晶: 100, 手繪: 50, 裝飾: 30 };
+const ROOT_COUNT_ADDON_KEY = "根數(每根)";
+const LOWER_LASH_ADDON_KEY = "下睫毛";
+
+const ROOT_COUNT_PRESETS = [10, 15, 20];
+
+// Add-ons in this app:
+// - 根數(每根)：使用者可透過數量輸入「任意根數」（並提供 10/15/20 快選）
+// - 下睫毛：下睫毛服務加價（用數量切換 0/1）
+const DEFAULT_ADDONS = {
+  [ROOT_COUNT_ADDON_KEY]: 0,
+  [LOWER_LASH_ADDON_KEY]: 0,
+};
 const CUSTOM_ADDONS_STORAGE_KEY = "nail_custom_addons";
 const DEFAULT_BASE_STYLES = {
-  透明建甲: 800,
-  單色: 900,
-  跳色: 1000,
-  法式: 1200,
-  貓眼: 1300,
-  漸層: 1400,
+  自然款: 900,
+  濃密款: 1000,
+  造型款: 1200,
+  客製款: 1400,
 };
 const CUSTOM_BASE_STYLES_STORAGE_KEY = "nail_custom_base_styles";
+
+// V2: 直接覆蓋整份設定，支援刪除預設項目並持久化
+const BASE_STYLES_OVERRIDE_STORAGE_KEY = "lash_base_styles_v2";
+const ADDONS_OVERRIDE_STORAGE_KEY = "lash_addons_v2";
+
+const SPA_OVERRIDE_STORAGE_KEY = "lash_spa_v2";
+const REMOVAL_OVERRIDE_STORAGE_KEY = "lash_removal_v2";
+
+const DEFAULT_SPA_SERVICES = {
+  睫毛SPA: 300,
+  深層清潔: 1000,
+  睫毛角蛋白: 500,
+};
+const CUSTOM_SPA_STORAGE_KEY = "nail_custom_spa";
 
 const getStoredCustomAddons = () => {
   try {
@@ -813,6 +869,58 @@ const getStoredCustomAddons = () => {
 const getStoredCustomBaseStyles = () => {
   try {
     const raw = localStorage.getItem(CUSTOM_BASE_STYLES_STORAGE_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== "object") return {};
+    return Object.fromEntries(
+      Object.entries(parsed).filter(
+        ([name, price]) =>
+          typeof name === "string" &&
+          name.trim() &&
+          typeof price === "number" &&
+          Number.isFinite(price) &&
+          price >= 0
+      )
+    );
+  } catch {
+    return {};
+  }
+};
+
+const getStoredOverrideMap = (storageKey) => {
+  try {
+    const raw = localStorage.getItem(storageKey);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== "object") return null;
+    const entries = Object.entries(parsed).filter(
+      ([name, price]) =>
+        typeof name === "string" &&
+        name.trim() &&
+        typeof price === "number" &&
+        Number.isFinite(price) &&
+        price >= 0
+    );
+    return Object.fromEntries(entries);
+  } catch {
+    return null;
+  }
+};
+
+const getStoredBaseStylesOverride = () =>
+  getStoredOverrideMap(BASE_STYLES_OVERRIDE_STORAGE_KEY);
+
+const getStoredAddonsOverride = () =>
+  getStoredOverrideMap(ADDONS_OVERRIDE_STORAGE_KEY);
+
+const getStoredSpaOverride = () => getStoredOverrideMap(SPA_OVERRIDE_STORAGE_KEY);
+
+const getStoredRemovalOverride = () =>
+  getStoredOverrideMap(REMOVAL_OVERRIDE_STORAGE_KEY);
+
+const getStoredCustomSpa = () => {
+  try {
+    const raw = localStorage.getItem(CUSTOM_SPA_STORAGE_KEY);
     if (!raw) return {};
     const parsed = JSON.parse(raw);
     if (!parsed || typeof parsed !== "object") return {};
@@ -857,6 +965,12 @@ const App = () => {
   const [newBaseName, setNewBaseName] = useState("");
   const [newBasePrice, setNewBasePrice] = useState("");
   const [baseFormError, setBaseFormError] = useState("");
+  const [newRemovalName, setNewRemovalName] = useState("");
+  const [newRemovalPrice, setNewRemovalPrice] = useState("");
+  const [removalFormError, setRemovalFormError] = useState("");
+  const [newSpaName, setNewSpaName] = useState("");
+  const [newSpaPrice, setNewSpaPrice] = useState("");
+  const [spaFormError, setSpaFormError] = useState("");
   const [records, setRecords] = useState(() => getStoredRecords());
 
   const t = useMemo(() => {
@@ -881,6 +995,8 @@ const App = () => {
   useEffect(() => {
     setAddonFormError("");
     setBaseFormError("");
+    setRemovalFormError("");
+    setSpaFormError("");
   }, [locale]);
 
   // 同步工作室名稱
@@ -897,18 +1013,28 @@ const App = () => {
 
   // 價格設定
   const [prices, setPrices] = useState(() => ({
-    removal: {
-      "本店 / 純卸甲": 300,
-      "本店 / 卸甲續作": 100,
-      "他店 / 純卸甲": 500,
-      "他店 / 卸甲續作": 300,
-    },
+    removal:
+      getStoredRemovalOverride() ?? {
+        "本店 / 純卸除": 300,
+        "本店 / 卸除續作": 100,
+        "他店 / 純卸除": 500,
+        "他店 / 卸除續作": 300,
+      },
     base: {
-      ...DEFAULT_BASE_STYLES,
-      ...getStoredCustomBaseStyles(),
+      ...(getStoredBaseStylesOverride() ?? {
+        ...DEFAULT_BASE_STYLES,
+        ...getStoredCustomBaseStyles(),
+      }),
     },
-    addons: { ...DEFAULT_ADDONS, ...getStoredCustomAddons() },
-    spa: { 手部基礎: 300, 手部深層: 1000, 足部基礎: 500, 足部深層: 1300 },
+    addons: getStoredAddonsOverride() ?? {
+      ...DEFAULT_ADDONS,
+      ...getStoredCustomAddons(),
+    },
+    spa:
+      getStoredSpaOverride() ?? {
+        ...DEFAULT_SPA_SERVICES,
+        ...getStoredCustomSpa(),
+      },
   }));
 
   // 同步自訂加購到本機儲存
@@ -916,22 +1042,54 @@ const App = () => {
     const customAddons = Object.fromEntries(
       Object.entries(prices.addons).filter(([name]) => !(name in DEFAULT_ADDONS))
     );
+    // V2 override: 支援刪除預設項目並持久化
     localStorage.setItem(
-      CUSTOM_ADDONS_STORAGE_KEY,
-      JSON.stringify(customAddons)
+      ADDONS_OVERRIDE_STORAGE_KEY,
+      JSON.stringify(prices.addons)
     );
+    // 舊 key：保留相容用
+    localStorage.setItem(CUSTOM_ADDONS_STORAGE_KEY, JSON.stringify(customAddons));
   }, [prices.addons]);
 
   // 同步自訂款式到本機儲存
   useEffect(() => {
     const customBase = Object.fromEntries(
-      Object.entries(prices.base).filter(([name]) => !(name in DEFAULT_BASE_STYLES))
+      Object.entries(prices.base).filter(
+        ([name]) => !(name in DEFAULT_BASE_STYLES)
+      )
     );
+    // V2 override：支援刪除預設項目並持久化
+    localStorage.setItem(
+      BASE_STYLES_OVERRIDE_STORAGE_KEY,
+      JSON.stringify(prices.base)
+    );
+    // 舊 key：保留相容用
     localStorage.setItem(
       CUSTOM_BASE_STYLES_STORAGE_KEY,
       JSON.stringify(customBase)
     );
   }, [prices.base]);
+
+  // 同步自訂 SPA 到本機儲存
+  useEffect(() => {
+    // V2 override：支援刪除預設項目並持久化（包含預設項目刪除）
+    localStorage.setItem(SPA_OVERRIDE_STORAGE_KEY, JSON.stringify(prices.spa));
+    // 舊 key：僅保留自訂項目（相容舊版資料）
+    const customSpa = Object.fromEntries(
+      Object.entries(prices.spa).filter(
+        ([name]) => !(name in DEFAULT_SPA_SERVICES)
+      )
+    );
+    localStorage.setItem(CUSTOM_SPA_STORAGE_KEY, JSON.stringify(customSpa));
+  }, [prices.spa]);
+
+  // 同步自訂 Removal 到本機儲存（支援新增/刪除）
+  useEffect(() => {
+    localStorage.setItem(
+      REMOVAL_OVERRIDE_STORAGE_KEY,
+      JSON.stringify(prices.removal)
+    );
+  }, [prices.removal]);
 
   // 選擇狀態
   const [selections, setSelections] = useState({
@@ -1112,6 +1270,12 @@ const App = () => {
     });
   };
 
+  const getAddonUnitLabel = (addonKey) => {
+    if (addonKey === ROOT_COUNT_ADDON_KEY) return locale === "en" ? "/ root" : "/ 根";
+    if (addonKey === LOWER_LASH_ADDON_KEY) return locale === "en" ? "/ service" : "/ 次";
+    return "";
+  };
+
   const addCustomAddon = () => {
     const name = newAddonName.trim();
     const price = Number(newAddonPrice);
@@ -1141,8 +1305,6 @@ const App = () => {
   };
 
   const removeCustomAddon = (name) => {
-    if (name in DEFAULT_ADDONS) return;
-
     setPrices((prev) => {
       const nextAddons = { ...prev.addons };
       delete nextAddons[name];
@@ -1186,8 +1348,6 @@ const App = () => {
   };
 
   const removeCustomBaseStyle = (name) => {
-    if (name in DEFAULT_BASE_STYLES) return;
-
     setPrices((prev) => {
       const nextBase = { ...prev.base };
       delete nextBase[name];
@@ -1197,6 +1357,88 @@ const App = () => {
     setSelections((prev) => {
       if (prev.base !== name) return prev;
       return { ...prev, base: null };
+    });
+  };
+
+  const addCustomRemoval = () => {
+    const name = newRemovalName.trim();
+    const price = Number(newRemovalPrice);
+
+    if (!name) {
+      setRemovalFormError(t("errRemovalName"));
+      return;
+    }
+
+    if (Number.isNaN(price) || price < 0) {
+      setRemovalFormError(t("errPrice"));
+      return;
+    }
+
+    if (prices.removal[name] !== undefined) {
+      setRemovalFormError(t("errRemovalDup"));
+      return;
+    }
+
+    setPrices((prev) => ({
+      ...prev,
+      removal: { ...prev.removal, [name]: price },
+    }));
+    setNewRemovalName("");
+    setNewRemovalPrice("");
+    setRemovalFormError("");
+  };
+
+  const removeCustomRemoval = (name) => {
+    setPrices((prev) => {
+      const nextRemoval = { ...prev.removal };
+      delete nextRemoval[name];
+      return { ...prev, removal: nextRemoval };
+    });
+
+    setSelections((prev) => {
+      if (prev.removal !== name) return prev;
+      return { ...prev, removal: null };
+    });
+  };
+
+  const addCustomSpa = () => {
+    const name = newSpaName.trim();
+    const price = Number(newSpaPrice);
+
+    if (!name) {
+      setSpaFormError(t("errSpaName"));
+      return;
+    }
+
+    if (Number.isNaN(price) || price < 0) {
+      setSpaFormError(t("errPrice"));
+      return;
+    }
+
+    if (prices.spa[name] !== undefined) {
+      setSpaFormError(t("errSpaDup"));
+      return;
+    }
+
+    setPrices((prev) => ({
+      ...prev,
+      spa: { ...prev.spa, [name]: price },
+    }));
+    setNewSpaName("");
+    setNewSpaPrice("");
+    setSpaFormError("");
+  };
+
+  const removeCustomSpa = (name) => {
+    setPrices((prev) => {
+      const nextSpa = { ...prev.spa };
+      delete nextSpa[name];
+      return { ...prev, spa: nextSpa };
+    });
+
+    setSelections((prev) => {
+      if (!prev.spa.includes(name)) return prev;
+      return { ...prev, spa: prev.spa.filter((i) => i !== name) };
     });
   };
 
@@ -1240,7 +1482,7 @@ const App = () => {
 
   return (
     <div
-      className="min-h-screen bg-[#F6F1EC] text-[#5F4636]"
+      className="min-h-screen bg-[#FBF2ED] text-[#9E606F]"
       style={{
         paddingBottom:
           view === "calculator"
@@ -1264,15 +1506,15 @@ const App = () => {
           onClick={() => setView("calculator")}
           className="flex items-center gap-3 text-left"
         >
-          <div className="w-9 h-9 bg-[#9F7D6B] rounded-xl flex items-center justify-center">
+          <div className="w-9 h-9 bg-[#BA797D] rounded-xl flex items-center justify-center">
             <img
               src="/logo-mark.png"
-              alt="NailCalc"
+              alt="LashCalc"
               className="w-10 h-10"
               draggable="false"
             />
           </div>
-          <h1 className="text-xl font-bold text-[#5F4636]">
+          <h1 className="text-xl font-bold text-[#9E606F]">
             {t("appTitle")}
           </h1>
         </button>
@@ -1283,7 +1525,7 @@ const App = () => {
               setView(view === "reports" ? "calculator" : "reports")
             }
             className={`${
-              view === "reports" ? "text-[#9F7D6B]" : "text-stone-400"
+              view === "reports" ? "text-[#BA797D]" : "text-stone-400"
             }`}
           >
             <Icon name="chart" size={22} />
@@ -1291,7 +1533,7 @@ const App = () => {
           <button
             onClick={() => setView(view === "admin" ? "calculator" : "admin")}
             className={`${
-              view === "admin" ? "text-[#9F7D6B]" : "text-stone-400"
+              view === "admin" ? "text-[#BA797D]" : "text-stone-400"
             }`}
           >
             <Icon name="settings" size={22} />
@@ -1302,11 +1544,11 @@ const App = () => {
       {view === "calculator" && (
         <div className="p-5 max-w-lg mx-auto space-y-8">
           <p
-            className="w-full text-center text-[#9F7D6B] font-bold leading-snug py-2.5 px-4 bg-white/60 border border-stone-200 rounded-3xl"
+            className="w-full text-center text-[#C07F80] font-bold leading-snug py-2.5 px-4 bg-white/60 border border-stone-200 rounded-3xl"
             style={{ fontSize: theme.fontSize.btnMain }}
           >
             <span className="block">{greetingLines.line1}</span>
-            <span className="block mt-1 font-semibold text-[#9F7D6B]/90">
+            <span className="block mt-1 font-semibold text-[#C07F80]">
               {greetingLines.line2}
             </span>
           </p>
@@ -1323,7 +1565,7 @@ const App = () => {
                   onClick={() => toggleSelection("removal", item)}
                   className={`p-4 rounded-2xl border transition-all ${
                     selections.removal === item
-                      ? "border-[#9F7D6B] bg-[#EBDCD3]"
+                      ? "border-[#BA797D] bg-[#F1DFDC]"
                       : "border-stone-200 bg-white"
                   }`}
                 >
@@ -1335,7 +1577,7 @@ const App = () => {
                   </div>
                   <div
                     style={{ fontSize: theme.fontSize.btnSub }}
-                    className="text-stone-400"
+                    className="text-[#A99CA0]"
                   >
                     ${prices.removal[item]}
                   </div>
@@ -1357,7 +1599,7 @@ const App = () => {
                   onClick={() => toggleSelection("base", item)}
                   className={`p-3 rounded-xl border transition-all ${
                     selections.base === item
-                      ? "border-[#9F7D6B] bg-[#EBDCD3]"
+                      ? "border-[#BA797D] bg-[#F1DFDC]"
                       : "border-stone-200 bg-white"
                   }`}
                 >
@@ -1369,7 +1611,7 @@ const App = () => {
                   </div>
                   <div
                     style={{ fontSize: theme.fontSize.baseBtnSub }}
-                    className="opacity-60"
+                    className="text-[#A99CA0]"
                   >
                     ${prices.base[item]}
                   </div>
@@ -1399,56 +1641,134 @@ const App = () => {
                     </div>
                     <div
                       style={{ fontSize: theme.fontSize.btnSub }}
-                      className="text-stone-400"
+                      className="text-[#A99CA0]"
                     >
-                      ${prices.addons[item]} {t("perFinger")}
+                      ${prices.addons[item]} {getAddonUnitLabel(item)}
                     </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <button
-                      onClick={() =>
-                        setSelections((p) => ({
-                          ...p,
-                          addons: {
-                            ...p.addons,
-                            [item]: Math.max(0, (p.addons[item] || 0) - 1),
-                          },
-                        }))
-                      }
-                      className="w-8 h-8 rounded-lg border border-stone-200 flex items-center justify-center"
-                    >
-                      <Icon name="minus" size={14} />
-                    </button>
-                    <input
-                      type="number"
-                      value={selections.addons[item] || 0}
-                      onChange={(e) =>
-                        setSelections((p) => ({
-                          ...p,
-                          addons: {
-                            ...p.addons,
-                            [item]: parseInt(e.target.value) || 0,
-                          },
-                        }))
-                      }
-                      onFocus={(e) => e.target.select()}
-                      className="w-10 text-center font-bold text-[#9F7D6B] bg-transparent outline-none"
-                    />
-                    <button
-                      onClick={() =>
-                        setSelections((p) => ({
-                          ...p,
-                          addons: {
-                            ...p.addons,
-                            [item]: (p.addons[item] || 0) + 1,
-                          },
-                        }))
-                      }
-                      className="w-8 h-8 rounded-lg bg-[#9F7D6B] text-white flex items-center justify-center"
-                    >
-                      <Icon name="plus" size={14} />
-                    </button>
-                  </div>
+                  {item === ROOT_COUNT_ADDON_KEY ? (
+                    <div className="flex flex-col items-end gap-2">
+                      <div className="flex items-center gap-2">
+                        <button
+                          onClick={() =>
+                            setSelections((p) => ({
+                              ...p,
+                              addons: {
+                                ...p.addons,
+                                [item]: Math.max(0, (p.addons[item] || 0) - 1),
+                              },
+                            }))
+                          }
+                          className="w-8 h-8 rounded-lg border border-stone-200 flex items-center justify-center"
+                        >
+                          <Icon name="minus" size={14} />
+                        </button>
+                        <input
+                          type="number"
+                          value={selections.addons[item] || 0}
+                          onChange={(e) =>
+                            setSelections((p) => ({
+                              ...p,
+                              addons: {
+                                ...p.addons,
+                                [item]: parseInt(e.target.value) || 0,
+                              },
+                            }))
+                          }
+                          onFocus={(e) => e.target.select()}
+                          className="w-10 text-center font-bold text-[#BA797D] bg-transparent outline-none"
+                        />
+                        <button
+                          onClick={() =>
+                            setSelections((p) => ({
+                              ...p,
+                              addons: {
+                                ...p.addons,
+                                [item]: (p.addons[item] || 0) + 1,
+                              },
+                            }))
+                          }
+                          className="w-8 h-8 rounded-lg bg-[#BA797D] text-white flex items-center justify-center"
+                        >
+                          <Icon name="plus" size={14} />
+                        </button>
+                      </div>
+                      <div className="flex gap-2">
+                        {ROOT_COUNT_PRESETS.map((n) => (
+                          <button
+                            key={n}
+                            type="button"
+                            onClick={() =>
+                              setSelections((p) => ({
+                                ...p,
+                                addons: { ...p.addons, [item]: n },
+                              }))
+                            }
+                            className="px-2 py-1 rounded-lg text-xs font-bold border border-stone-200 text-[#BA797D] hover:bg-[#F1DFDC] transition-colors"
+                          >
+                            {locale === "en" ? `${n} roots` : `${n} 根`}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={() =>
+                          setSelections((p) => ({
+                            ...p,
+                            addons: {
+                              ...p.addons,
+                              [item]:
+                                item === LOWER_LASH_ADDON_KEY
+                                  ? 0
+                                  : Math.max(0, (p.addons[item] || 0) - 1),
+                            },
+                          }))
+                        }
+                        className="w-8 h-8 rounded-lg border border-stone-200 flex items-center justify-center"
+                      >
+                        <Icon name="minus" size={14} />
+                      </button>
+                      <input
+                        type="number"
+                        value={selections.addons[item] || 0}
+                        onChange={(e) =>
+                          setSelections((p) => ({
+                            ...p,
+                            addons: {
+                              ...p.addons,
+                              [item]:
+                                item === LOWER_LASH_ADDON_KEY
+                                  ? (parseInt(e.target.value) || 0) > 0
+                                    ? 1
+                                    : 0
+                                  : parseInt(e.target.value) || 0,
+                            },
+                          }))
+                        }
+                        onFocus={(e) => e.target.select()}
+                        className="w-10 text-center font-bold text-[#BA797D] bg-transparent outline-none"
+                      />
+                      <button
+                        onClick={() =>
+                          setSelections((p) => ({
+                            ...p,
+                            addons: {
+                              ...p.addons,
+                              [item]:
+                                item === LOWER_LASH_ADDON_KEY
+                                  ? 1
+                                  : (p.addons[item] || 0) + 1,
+                            },
+                          }))
+                        }
+                        className="w-8 h-8 rounded-lg bg-[#BA797D] text-white flex items-center justify-center"
+                      >
+                        <Icon name="plus" size={14} />
+                      </button>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -1467,7 +1787,7 @@ const App = () => {
                   onClick={() => toggleSelection("spa", item)}
                   className={`p-4 rounded-2xl border transition-all ${
                     selections.spa.includes(item)
-                      ? "border-[#9F7D6B] bg-[#EBDCD3]"
+                      ? "border-[#BA797D] bg-[#F1DFDC]"
                       : "border-stone-200 bg-white"
                   }`}
                 >
@@ -1479,7 +1799,7 @@ const App = () => {
                   </div>
                   <div
                     style={{ fontSize: theme.fontSize.btnMain }}
-                    className="opacity-50"
+                    className="text-[#A99CA0]"
                   >
                     ${prices.spa[item]}
                   </div>
@@ -1497,7 +1817,7 @@ const App = () => {
             <div className="space-y-3">
               <div className="bg-white p-4 rounded-2xl border border-stone-200 flex justify-between items-center">
                 <div className="flex items-center gap-3">
-                  <div className="bg-stone-100 p-2 rounded-lg text-[#9F7D6B]">
+                  <div className="bg-stone-100 p-2 rounded-lg text-[#BA797D]">
                     <Icon name="package" size={18} />
                   </div>
                   <span
@@ -1511,7 +1831,7 @@ const App = () => {
                   <span className="text-stone-400 text-xs">$</span>
                   <input
                     type="number"
-                    className="w-20 text-right font-bold text-[#9F7D6B] bg-stone-50 rounded-lg p-2 focus:outline-none"
+                    className="w-20 text-right font-bold text-[#BA797D] bg-stone-50 rounded-lg p-2 focus:outline-none"
                     value={selections.customProduct || ""}
                     onChange={(e) =>
                       setSelections((p) => ({
@@ -1525,7 +1845,7 @@ const App = () => {
               </div>
               <div className="bg-white p-4 rounded-2xl border border-stone-200 flex justify-between items-center">
                 <div className="flex items-center gap-3">
-                  <div className="bg-stone-100 p-2 rounded-lg text-[#9F7D6B]">
+                  <div className="bg-stone-100 p-2 rounded-lg text-[#BA797D]">
                     <Icon name="plus" size={18} />
                   </div>
                   <span
@@ -1539,7 +1859,7 @@ const App = () => {
                   <span className="text-stone-400 text-sm">$</span>
                   <input
                     type="number"
-                    className="w-20 text-right font-bold text-[#9F7D6B] bg-stone-50 rounded-lg p-2 focus:outline-none"
+                    className="w-20 text-right font-bold text-[#BA797D] bg-stone-50 rounded-lg p-2 focus:outline-none"
                     value={selections.customOther || ""}
                     onChange={(e) =>
                       setSelections((p) => ({
@@ -1560,7 +1880,7 @@ const App = () => {
               title={t("sectionDiscountTitle")}
               label={t("sectionDiscountLabel")}
             />
-            <div className="bg-white rounded-[1.25rem] p-5 border border-dashed border-[#9F7D6B] space-y-4 shadow-sm">
+            <div className="bg-white rounded-[1.25rem] p-5 border border-dashed border-[#BA797D] space-y-4 shadow-sm">
               <div className="flex gap-2 overflow-x-auto hide-scrollbar pb-1">
                 {[
                   { k: "none", l: t("discountNone"), t: "none", v: 0 },
@@ -1581,7 +1901,7 @@ const App = () => {
                     className={`whitespace-nowrap px-3 py-2 rounded-xl text-xs font-bold border transition-all ${
                       selections.discountType === d.t &&
                       selections.discountVal === d.v
-                        ? "border-[#9F7D6B] bg-[#EBDCD3] text-[#9F7D6B]"
+                        ? "border-[#BA797D] bg-[#F1DFDC] text-[#BA797D]"
                         : "border-stone-200 text-stone-400"
                     }`}
                   >
@@ -1603,7 +1923,7 @@ const App = () => {
                     className={`flex-1 py-2 rounded-xl text-xs font-bold border transition-all ${
                       selections.discountType === "fixed" &&
                       selections.discountVal === v
-                        ? "border-[#9F7D6B] bg-[#EBDCD3] text-[#9F7D6B]"
+                        ? "border-[#BA797D] bg-[#F1DFDC] text-[#A99CA0]"
                         : "border-stone-200 text-stone-400"
                     }`}
                   >
@@ -1617,10 +1937,10 @@ const App = () => {
                   <span className="text-xs">{t("discountCustom")}</span>
                 </div>
                 <div className="flex items-center gap-1">
-                  <span className="text-[#9F7D6B] font-bold text-xs">-$</span>
+                  <span className="text-[#A99CA0] font-bold text-xs">-$</span>
                   <input
                     type="number"
-                    className="w-16 text-right font-bold text-[#9F7D6B] bg-stone-50 rounded-lg p-1.5 focus:outline-none"
+                    className="w-16 text-right font-bold text-[#A99CA0] bg-stone-50 rounded-lg p-1.5 focus:outline-none"
                     value={
                       selections.discountType === "fixed" &&
                       ![50, 100, 200].includes(selections.discountVal)
@@ -1652,7 +1972,7 @@ const App = () => {
           <div className="flex items-center justify-between bg-white p-3 rounded-2xl border border-stone-100 mb-6 shadow-sm">
             <button
               onClick={() => changeMonth(-1)}
-              className="w-10 h-10 flex items-center justify-center text-[#9F7D6B] hover:bg-stone-50 rounded-xl transition-colors"
+              className="w-10 h-10 flex items-center justify-center text-[#BA797D] hover:bg-[#F1DFDC] rounded-xl transition-colors"
             >
               <Icon name="chevronLeft" size={20} />
             </button>
@@ -1660,13 +1980,13 @@ const App = () => {
               <span className="text-[12px] text-stone-400 font-bold uppercase tracking-widest leading-none mb-1">
                 {t("monthQuery")}
               </span>
-              <span className="text-lg font-black text-[#9F7D6B]">
+              <span className="text-lg font-black text-[#BA797D]">
                 {selectedMonth.replace("-", " / ")}
               </span>
             </div>
             <button
               onClick={() => changeMonth(1)}
-              className="w-10 h-10 flex items-center justify-center text-[#9F7D6B] hover:bg-stone-50 rounded-xl transition-colors"
+              className="w-10 h-10 flex items-center justify-center text-[#BA797D] hover:bg-[#F1DFDC] rounded-xl transition-colors"
             >
               <Icon name="chevronRight" size={20} />
             </button>
@@ -1677,7 +1997,7 @@ const App = () => {
               <p className="text-center text-[12px] text-stone-400 font-bold uppercase mb-1">
                 {t("revenueMonth")}
               </p>
-              <p className="text-center text-2xl font-black text-[#9F7D6B]">
+              <p className="text-center text-2xl font-black text-[#BA797D]">
                 $
                 {filteredRecords
                   .reduce((acc, r) => acc + r.amount, 0)
@@ -1694,7 +2014,7 @@ const App = () => {
               <p className="text-center text-[12px] text-stone-400 font-bold uppercase mb-1">
                 {t("visitsMonth")}
               </p>
-              <p className="text-center text-2xl font-black text-[#9F7D6B]">
+              <p className="text-center text-2xl font-black text-[#BA797D]">
                 {filteredRecords.length}
               </p>
             </div>
@@ -1709,7 +2029,7 @@ const App = () => {
             </h3>
             <button
               onClick={exportToCSV}
-              className="text-[#9F7D6B] text-xs font-bold flex items-center gap-1"
+              className="text-[#BA797D] text-xs font-bold flex items-center gap-1"
             >
               <Icon name="download" size={14} /> {t("exportCsv")}
             </button>
@@ -1731,7 +2051,7 @@ const App = () => {
                     <p className="text-sm font-bold truncate">{r.items}</p>
                   </div>
                   <div className="flex items-center gap-4">
-                    <span className="font-black text-[#9F7D6B]">
+                    <span className="font-black text-[#BA797D]">
                       ${r.amount}
                     </span>
                     <button
@@ -1760,7 +2080,7 @@ const App = () => {
               value={studioName}
               onChange={(e) => setStudioName(e.target.value)}
               onFocus={(e) => e.target.select()}
-              className="w-full text-xl font-bold text-[#9F7D6B] bg-transparent outline-none border-b-2 border-stone-100 focus:border-[#9F7D6B] pb-2"
+              className="w-full text-xl font-bold text-[#BA797D] bg-transparent outline-none border-b-2 border-stone-100 focus:border-[#BA797D] pb-2"
             />
             <p className="text-[10px] text-stone-300 mt-3 font-medium">
               {t("studioNameHint")}
@@ -1774,7 +2094,7 @@ const App = () => {
             <select
               value={locale}
               onChange={(e) => setLocale(/** @type {AppLocale} */ (e.target.value))}
-              className="w-full text-sm font-bold bg-stone-50 rounded-2xl px-3 py-3 text-[#5F4636] outline-none border border-stone-100 focus:border-[#9F7D6B]"
+              className="w-full text-sm font-bold bg-stone-50 rounded-2xl px-3 py-3 text-[#9E606F] outline-none border border-stone-100 focus:border-[#BA797D]"
             >
               <option value="zh-TW">{t("language_zhTW")}</option>
               <option value="zh-CN">{t("language_zhCN")}</option>
@@ -1825,9 +2145,9 @@ const App = () => {
                           [cat]: { ...prev[cat], [name]: Number(e.target.value) },
                         }))
                       }
-                      className="w-20 text-center font-bold bg-stone-50 rounded-3xl px-3 py-1 text-[#9F7D6B] outline-none shadow-sm"
+                      className="w-20 text-center font-bold bg-stone-50 rounded-3xl px-3 py-1 text-[#BA797D] outline-none shadow-sm"
                     />
-                    {cat === "addons" && !(name in DEFAULT_ADDONS) && (
+                    {cat === "addons" && (
                       <button
                         type="button"
                         onClick={() => removeCustomAddon(name)}
@@ -1838,12 +2158,34 @@ const App = () => {
                       </button>
                     )}
 
-                    {cat === "base" && !(name in DEFAULT_BASE_STYLES) && (
+                    {cat === "base" && (
                       <button
                         type="button"
                         onClick={() => removeCustomBaseStyle(name)}
                         className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
                         aria-label={`${t("ariaDeleteBase")}: ${name}`}
+                      >
+                        <Icon name="trash" size={14} />
+                      </button>
+                    )}
+
+                    {cat === "removal" && (
+                      <button
+                        type="button"
+                        onClick={() => removeCustomRemoval(name)}
+                        className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
+                        aria-label={`${t("ariaDeleteRemoval")}: ${name}`}
+                      >
+                        <Icon name="trash" size={14} />
+                      </button>
+                    )}
+
+                    {cat === "spa" && (
+                      <button
+                        type="button"
+                        onClick={() => removeCustomSpa(name)}
+                        className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
+                        aria-label={`${t("ariaDeleteSpa")}: ${name}`}
                       >
                         <Icon name="trash" size={14} />
                       </button>
@@ -1866,7 +2208,7 @@ const App = () => {
                         if (addonFormError) setAddonFormError("");
                       }}
                       placeholder={t("addonNamePh")}
-                      className="flex-1 text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2 text-[#5F4636] outline-none border border-stone-100 focus:border-[#9F7D6B]"
+                      className="flex-1 text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2 text-[#9E606F] outline-none border border-stone-100 focus:border-[#BA797D]"
                     />
                     <div className="w-24 flex items-center gap-1 min-w-0">
                       <span className="text-stone-400 text-xs font-bold flex-none">$</span>
@@ -1880,7 +2222,7 @@ const App = () => {
                           if (addonFormError) setAddonFormError("");
                         }}
                         placeholder="0"
-                        className="w-0 flex-1 text-sm font-bold bg-stone-50 rounded-2xl py-2 text-center text-[#9F7D6B] outline-none border border-stone-100 focus:border-[#9F7D6B] min-w-0"
+                        className="w-0 flex-1 text-sm font-bold bg-stone-50 rounded-2xl py-2 text-center text-[#BA797D] outline-none border border-stone-100 focus:border-[#BA797D] min-w-0"
                       />
                     </div>
                   </div>
@@ -1892,7 +2234,7 @@ const App = () => {
                   <button
                     type="button"
                     onClick={addCustomAddon}
-                    className="w-full py-2.5 rounded-2xl bg-[#9F7D6B] text-white text-sm font-bold shadow-sm"
+                    className="w-full py-2.5 rounded-2xl bg-[#BA797D] text-white text-sm font-bold shadow-sm"
                   >
                     {t("addItem")}
                   </button>
@@ -1913,7 +2255,7 @@ const App = () => {
                         if (baseFormError) setBaseFormError("");
                       }}
                       placeholder={t("baseNamePh")}
-                      className="flex-1 text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2 text-[#5F4636] outline-none border border-stone-100 focus:border-[#9F7D6B]"
+                      className="flex-1 text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2 text-[#9E606F] outline-none border border-stone-100 focus:border-[#BA797D]"
                     />
                     <div className="w-24 flex items-center gap-1 min-w-0">
                       <span className="text-stone-400 text-xs font-bold flex-none">$</span>
@@ -1927,7 +2269,7 @@ const App = () => {
                           if (baseFormError) setBaseFormError("");
                         }}
                         placeholder="0"
-                        className="w-0 flex-1 text-sm font-bold bg-stone-50 rounded-2xl py-2 text-center text-[#9F7D6B] outline-none border border-stone-100 focus:border-[#9F7D6B] min-w-0"
+                      className="w-0 flex-1 text-sm font-bold bg-stone-50 rounded-2xl py-2 text-center text-[#BA797D] outline-none border border-stone-100 focus:border-[#BA797D] min-w-0"
                       />
                     </div>
                   </div>
@@ -1939,7 +2281,101 @@ const App = () => {
                   <button
                     type="button"
                     onClick={addCustomBaseStyle}
-                    className="w-full py-2.5 rounded-2xl bg-[#9F7D6B] text-white text-sm font-bold shadow-sm"
+                    className="w-full py-2.5 rounded-2xl bg-[#BA797D] text-white text-sm font-bold shadow-sm"
+                  >
+                    {t("addItem")}
+                  </button>
+                </div>
+              )}
+
+              {cat === "removal" && (
+                <div className="mt-4 pt-4 border-t border-dashed border-stone-200">
+                  <p className="text-[10px] font-bold text-stone-400 mb-3 uppercase tracking-widest">
+                    {t("newRemovalTitle")}
+                  </p>
+                  <div className="flex gap-2 mb-2">
+                    <input
+                      type="text"
+                      value={newRemovalName}
+                      onChange={(e) => {
+                        setNewRemovalName(e.target.value);
+                        if (removalFormError) setRemovalFormError("");
+                      }}
+                      placeholder={t("removalNamePh")}
+                      className="flex-1 text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2 text-[#9E606F] outline-none border border-stone-100 focus:border-[#BA797D]"
+                    />
+                    <div className="w-24 flex items-center gap-1 min-w-0">
+                      <span className="text-stone-400 text-xs font-bold flex-none">$</span>
+                      <input
+                        type="number"
+                        min="0"
+                        value={newRemovalPrice}
+                        onFocus={(e) => e.target.select()}
+                        onChange={(e) => {
+                          setNewRemovalPrice(e.target.value);
+                          if (removalFormError) setRemovalFormError("");
+                        }}
+                        placeholder="0"
+                        className="w-0 flex-1 text-sm font-bold bg-stone-50 rounded-2xl py-2 text-center text-[#BA797D] outline-none border border-stone-100 focus:border-[#BA797D] min-w-0"
+                      />
+                    </div>
+                  </div>
+                  {removalFormError && (
+                    <p className="text-[11px] text-rose-500 font-medium mb-2">
+                      {removalFormError}
+                    </p>
+                  )}
+                  <button
+                    type="button"
+                    onClick={addCustomRemoval}
+                    className="w-full py-2.5 rounded-2xl bg-[#BA797D] text-white text-sm font-bold shadow-sm"
+                  >
+                    {t("addItem")}
+                  </button>
+                </div>
+              )}
+
+              {cat === "spa" && (
+                <div className="mt-4 pt-4 border-t border-dashed border-stone-200">
+                  <p className="text-[10px] font-bold text-stone-400 mb-3 uppercase tracking-widest">
+                    {t("newSpaTitle")}
+                  </p>
+                  <div className="flex gap-2 mb-2">
+                    <input
+                      type="text"
+                      value={newSpaName}
+                      onChange={(e) => {
+                        setNewSpaName(e.target.value);
+                        if (spaFormError) setSpaFormError("");
+                      }}
+                      placeholder={t("spaNamePh")}
+                      className="flex-1 text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2 text-[#9E606F] outline-none border border-stone-100 focus:border-[#BA797D]"
+                    />
+                    <div className="w-24 flex items-center gap-1 min-w-0">
+                      <span className="text-stone-400 text-xs font-bold flex-none">$</span>
+                      <input
+                        type="number"
+                        min="0"
+                        value={newSpaPrice}
+                        onFocus={(e) => e.target.select()}
+                        onChange={(e) => {
+                          setNewSpaPrice(e.target.value);
+                          if (spaFormError) setSpaFormError("");
+                        }}
+                        placeholder="0"
+                        className="w-0 flex-1 text-sm font-bold bg-stone-50 rounded-2xl py-2 text-center text-[#BA797D] outline-none border border-stone-100 focus:border-[#BA797D] min-w-0"
+                      />
+                    </div>
+                  </div>
+                  {spaFormError && (
+                    <p className="text-[11px] text-rose-500 font-medium mb-2">
+                      {spaFormError}
+                    </p>
+                  )}
+                  <button
+                    type="button"
+                    onClick={addCustomSpa}
+                    className="w-full py-2.5 rounded-2xl bg-[#BA797D] text-white text-sm font-bold shadow-sm"
                   >
                     {t("addItem")}
                   </button>
@@ -1949,7 +2385,7 @@ const App = () => {
           ))}
           <button
             onClick={() => setView("calculator")}
-            className="w-full p-4 bg-[#9F7D6B] text-white rounded-[1.25rem] font-bold shadow-lg"
+            className="w-full p-4 bg-[#BA797D] text-white rounded-[1.25rem] font-bold shadow-lg"
           >
             {t("saveChanges")}
           </button>
@@ -1970,13 +2406,13 @@ const App = () => {
           <div className="max-w-md mx-auto flex justify-between items-end">
             <div>
               {getDiscountAmount() > 0 && (
-                <p className="text-xs text-[#9F7D6B] font-bold mb-1">
+                <p className="text-xs text-[#BA797D] font-bold mb-1">
                   {t("bottomDiscounted")} -${getDiscountAmount()}
                 </p>
               )}
               <div className="flex items-baseline">
-                <span className="text-[#9F7D6B] font-bold text-xl">$</span>
-                <span className="text-4xl font-black text-[#9F7D6B] leading-none">
+                <span className="text-[#BA797D] font-bold text-xl">$</span>
+                <span className="text-4xl font-black text-[#BA797D] leading-none">
                   {calculateTotal().toLocaleString(
                     locale === "en" ? "en-US" : locale === "zh-CN" ? "zh-CN" : "zh-TW"
                   )}
@@ -1990,7 +2426,7 @@ const App = () => {
                 className={`px-5 py-3 rounded-2xl font-bold flex items-center gap-1 transition-all ${
                   copied
                     ? "bg-green-500 text-white"
-                    : "bg-stone-100 text-[#9F7D6B]"
+                    : "bg-stone-100 text-[#BA797D]"
                 }`}
               >
                 <Icon name={copied ? "check" : "copy"} size={16} />{" "}
@@ -1999,7 +2435,7 @@ const App = () => {
 
               <button
                 onClick={() => setShowModal(true)}
-                className="bg-[#9F7D6B] text-white px-6 py-3 rounded-2xl font-bold"
+                className="bg-[#BA797D] text-white px-6 py-3 rounded-2xl font-bold"
               >
                 {t("checkout")}
               </button>
@@ -2027,7 +2463,7 @@ const App = () => {
               </button>
               <button
                 onClick={finalizePayment}
-                className="flex-[2] bg-[#9F7D6B] text-white py-3 px-6 rounded-xl font-bold"
+                className="flex-[2] bg-[#BA797D] text-white py-3 px-6 rounded-xl font-bold"
               >
                 {t("copyAndClose")}
               </button>
@@ -2038,16 +2474,16 @@ const App = () => {
 
       {/* 底部資訊 */}
       <footer className="mt-5 mb-1 max-w-lg mx-auto px-5 text-center pt-4">
-        <div className="text-[10px] font-medium tracking-widest text-[#5F4636]/50 flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
-          <span>NailCalc</span>
+        <div className="text-[10px] font-medium tracking-widest text-[#9E606F]/50 flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+          <span>LashCalc</span>
           <span aria-label="copyright">©</span>
           <span>{currentYear}</span>
-          <span className="text-[#5F4636]/35">•</span>
+          <span className="text-[#9E606F]/35">•</span>
           <a
             href="https://friendlycatgroup.com"
             target="_blank"
             rel="noreferrer"
-            className="text-[#5F4636]/70 underline underline-offset-[3px] decoration-[#5F4636]/35 hover:text-[#5F4636] hover:decoration-[#5F4636]/60 transition-colors"
+            className="text-[#9E606F]/70 underline underline-offset-[3px] decoration-[#9E606F]/35 hover:text-[#9E606F] hover:decoration-[#9E606F]/60 transition-colors"
           >
             {developerName}
           </a>
@@ -2063,14 +2499,14 @@ const App = () => {
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram: @friendlycatgroup"
-            className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] -m-1 text-[#9F7D6B] hover:text-[#7d634f] active:scale-95 transition-[color,transform] duration-200"
+              className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] -m-1 text-[#BA797D] hover:text-[#BA797D] active:scale-95 transition-[color,transform] duration-200"
           >
             <Icon name="instagram" size={22} />
           </a>
           <a
             href="mailto:friendlycatgroup@gmail.com"
             aria-label="Email: friendlycatgroup@gmail.com"
-            className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] -m-1 text-[#9F7D6B] hover:text-[#7d634f] active:scale-95 transition-[color,transform] duration-200"
+              className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] -m-1 text-[#BA797D] hover:text-[#BA797D] active:scale-95 transition-[color,transform] duration-200"
           >
             <Icon name="mail" size={22} />
           </a>
