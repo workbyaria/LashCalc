@@ -405,7 +405,7 @@ const UI_STRINGS = {
     sectionRemovalLabel: "Removal",
     sectionServiceTypeTitle: "服務類型",
     sectionServiceTypeLabel: "Service",
-    sectionRefillPricingTitle: "補睫毛計價",
+    sectionRefillPricingTitle: "補睫毛",
     sectionRefillPricingLabel: "Refill",
     sectionBaseAdminLabel: "Categories",
     sectionAddonsTitle: "加購造型",
@@ -423,7 +423,7 @@ const UI_STRINGS = {
 
     otherService: "其他",
 
-    refillPricingSettingsTitle: "補睫毛計價（結帳顯示）",
+    refillPricingSettingsTitle: "補睫毛（結帳顯示）",
     refillModeWeeks: "依週數",
     refillModeRoots: "依根數",
     refillPricingModeHint: "選擇結帳時要顯示週數方案或根數方案。兩組價格皆可在此編輯。",
@@ -841,15 +841,23 @@ const PRICE_LABELS = {
       "100 根": "100 根",
       "120 根": "120 根",
       "150 根": "150 根",
-      "100根": "100根",
-      "120根": "120根",
-      "150根": "150根",
-      "200根": "200根",
-      "250根": "250根",
-      "300根": "300根",
-      "400根": "400根",
-      "500根": "500根",
+      "200 根": "200 根",
+      "250 根": "250 根",
+      "300 根": "300 根",
+      "400 根": "400 根",
+      "500 根": "500 根",
+      "600 根": "600 根",
+      "200根": "200 根",
+      "250根": "250 根",
+      "300根": "300 根",
+      "400根": "400 根",
+      "500根": "500 根",
+      "600根": "600 根",
       依現場: "依現場",
+      仙子: "仙子",
+      韓系: "韓系",
+      漫畫: "漫畫",
+      泰式: "泰式",
     },
     addons: {
       "根數(每根)": "根數",
@@ -862,7 +870,7 @@ const PRICE_LABELS = {
     },
     products: {
       睫毛雨衣: "睫毛雨衣",
-      睫毛生長液: "睫毛生長液",
+      睫毛滋養液: "睫毛滋養液",
     },
     serviceType: {
       新接: "新嫁接",
@@ -895,15 +903,23 @@ const PRICE_LABELS = {
       "100 根": "100 根",
       "120 根": "120 根",
       "150 根": "150 根",
-      "100根": "100根",
-      "120根": "120根",
-      "150根": "150根",
-      "200根": "200根",
-      "250根": "250根",
-      "300根": "300根",
-      "400根": "400根",
-      "500根": "500根",
+      "200 根": "200 根",
+      "250 根": "250 根",
+      "300 根": "300 根",
+      "400 根": "400 根",
+      "500 根": "500 根",
+      "600 根": "600 根",
+      "200根": "200 根",
+      "250根": "250 根",
+      "300根": "300 根",
+      "400根": "400 根",
+      "500根": "500 根",
+      "600根": "600 根",
       依現場: "依现场",
+      仙子: "仙子",
+      韓系: "韩系",
+      漫畫: "漫画",
+      泰式: "泰式",
     },
     addons: {
       "根数(每根)": "根数",
@@ -916,20 +932,20 @@ const PRICE_LABELS = {
     },
     products: {
       睫毛雨衣: "睫毛雨衣",
-      睫毛生長液: "睫毛生长液",
+      睫毛滋養液: "睫毛滋养液",
     },
     serviceType: {
       新嫁接: "新嫁接",
       補睫毛: "补睫毛",
     },
     refill: {
-      "1週內": "1周内",
-      "2週內": "2周内",
-      "3週內": "3周内",
-      "4週內": "4周内",
-      "50根": "50根",
-      "80根": "80根",
-      "100根": "100根",
+      "1週內": "1 周内",
+      "2週內": "2 周内",
+      "3週內": "3 周内",
+      "4週內": "4 周内",
+      "50根": "50 根",
+      "80根": "80 根",
+      "100根": "100 根",
     },
   },
   en: {
@@ -949,6 +965,12 @@ const PRICE_LABELS = {
       "100 根": "100 roots",
       "120 根": "120 roots",
       "150 根": "150 roots",
+      "200 根": "200 roots",
+      "250 根": "250 roots",
+      "300 根": "300 roots",
+      "400 根": "400 roots",
+      "500 根": "500 roots",
+      "600 根": "600 roots",
       "100根": "100 roots",
       "120根": "120 roots",
       "150根": "150 roots",
@@ -957,7 +979,12 @@ const PRICE_LABELS = {
       "300根": "300 roots",
       "400根": "400 roots",
       "500根": "500 roots",
+      "600根": "600 roots",
       依現場: "On-site quote",
+      仙子: "Wispy",
+      韓系: "Korean",
+      漫畫: "Anime",
+      泰式: "Thai",
     },
     addons: {
       "根數(每根)": "Root count",
@@ -1006,7 +1033,7 @@ const formatBaseSelectionLabel = (locale, sel) => {
   return `${cat} · ${st}`;
 };
 
-/** 款式子項目數量 → Tailwind 網格：1＝滿寬一列；3 的倍數＝三欄；其餘＝二欄（含 2、4 與奇數） */
+/** 款式／補睫毛計價子按鈕數量 → 網格：1＝滿寬一列；3 的倍數＝單列最多三欄；其餘＝單列最多兩欄 */
 const getBaseRootButtonGridClass = (n) => {
   if (n <= 1) return "grid grid-cols-1 gap-2";
   if (n % 3 === 0) return "grid grid-cols-3 gap-2";
@@ -1037,8 +1064,15 @@ const DEFAULT_BASE_STYLES_FLAT_LEGACY = {
 /** 款式類別 → 根數方案（子按鈕標籤）→ 單價 */
 const DEFAULT_BASE_NESTED = {
   自然款: { "100 根": 0, "120 根": 0, "150 根": 0 },
-  濃密款: { "200根": 0, "300根": 0, "400根": 0, "500根": 0 },
-  設計款: { "200根": 0, "250根": 0, "300根": 0 },
+  濃密款: {
+    "200 根": 0,
+    "250 根": 0,
+    "300 根": 0,
+    "400 根": 0,
+    "500 根": 0,
+    "600 根": 0,
+  },
+  設計款: { 仙子: 0, 韓系: 0, 漫畫: 0, 泰式: 0 },
   客製款: { 依現場: 0 },
 };
 
@@ -1053,6 +1087,26 @@ const SPA_OVERRIDE_STORAGE_KEY = "lash_spa_v2";
 const REMOVAL_OVERRIDE_STORAGE_KEY = "lash_removal_v2";
 const PRODUCTS_OVERRIDE_STORAGE_KEY = "lash_products_v1";
 const REFILL_CONFIG_STORAGE_KEY = "lash_refill_config_v1";
+
+/** 款式預設（自然／濃密子按鈕等）更新時遞增，載入前清除舊儲存以套用最新 DEFAULT_BASE_NESTED */
+const BASE_DEFAULTS_SCHEMA_VERSION = 3;
+const BASE_DEFAULTS_VERSION_STORAGE_KEY = "lash_base_defaults_version";
+
+(function migrateBaseDefaultsSchemaIfNeeded() {
+  try {
+    const v = localStorage.getItem(BASE_DEFAULTS_VERSION_STORAGE_KEY);
+    if (v === String(BASE_DEFAULTS_SCHEMA_VERSION)) return;
+    localStorage.removeItem(BASE_STYLES_NESTED_STORAGE_KEY);
+    localStorage.removeItem(BASE_STYLES_OVERRIDE_STORAGE_KEY);
+    localStorage.removeItem(CUSTOM_BASE_STYLES_STORAGE_KEY);
+    localStorage.setItem(
+      BASE_DEFAULTS_VERSION_STORAGE_KEY,
+      String(BASE_DEFAULTS_SCHEMA_VERSION)
+    );
+  } catch {
+    // ignore
+  }
+})();
 
 const SERVICE_TYPE_NEW = "新嫁接";
 const SERVICE_TYPE_REFILL = "補睫毛";
@@ -2172,6 +2226,7 @@ const App = () => {
 
         <div className="flex items-center gap-4">
           <button
+            type="button"
             onClick={() =>
               setView(view === "reports" ? "calculator" : "reports")
             }
@@ -2182,6 +2237,7 @@ const App = () => {
             <Icon name="chart" size={22} />
           </button>
           <button
+            type="button"
             onClick={() => setView(view === "admin" ? "calculator" : "admin")}
             className={`${
               view === "admin" ? "text-[#BA797D]" : "text-stone-400"
@@ -2215,7 +2271,7 @@ const App = () => {
                   key={st}
                   type="button"
                   onClick={() => setServiceType(st)}
-                  className={`p-4 rounded-2xl border transition-all ${
+                  className={`p-4 rounded-2xl border transition-all text-center ${
                     selections.serviceType === st
                       ? "border-[#BA797D] bg-[#F1DFDC]"
                       : "border-stone-200 bg-white"
@@ -2254,10 +2310,10 @@ const App = () => {
                         key={`${category}-${styleName}`}
                         type="button"
                         onClick={() => toggleBaseSelection(category, styleName)}
-                        className={`rounded-xl border transition-all ${
+                        className={`rounded-xl border transition-all text-center ${
                           n === 1
-                            ? "w-full px-4 py-4 flex flex-row items-center justify-between gap-3 text-left min-h-[52px]"
-                            : "p-3 text-left"
+                            ? "w-full px-4 py-4 min-h-[52px]"
+                            : "p-3"
                         } ${
                           selections.base?.category === category &&
                           selections.base?.style === styleName
@@ -2267,15 +2323,13 @@ const App = () => {
                       >
                         <div
                           style={{ fontSize: theme.fontSize.baseBtnMain }}
-                          className={`font-bold leading-snug ${
-                            n === 1 ? "flex-1" : ""
-                          }`}
+                          className="font-bold leading-snug"
                         >
                           {priceItemLabel(locale, "baseStyle", styleName)}
                         </div>
                         <div
                           style={{ fontSize: theme.fontSize.baseBtnSub }}
-                          className="text-[#A99CA0] shrink-0"
+                          className="text-[#A99CA0]"
                         >
                           ${price}
                         </div>
@@ -2287,7 +2341,7 @@ const App = () => {
             );
           })}
 
-          {/* 3. 補睫毛計價（僅選「補睫毛」時；依設定顯示週數或根數方案） */}
+          {/* 3. 補睫毛（僅選「補睫毛」時；依設定顯示週數或根數方案） */}
           {selections.serviceType === SERVICE_TYPE_REFILL && (
             <section>
               <SectionHeader
@@ -2307,14 +2361,17 @@ const App = () => {
                     </p>
                   );
                 }
+                const refillGridClass = getBaseRootButtonGridClass(
+                  keys.length
+                ).replace("gap-2", "gap-3");
                 return (
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className={refillGridClass}>
                     {keys.map((key) => (
                       <button
                         key={key}
                         type="button"
                         onClick={() => toggleRefillTier(key)}
-                        className={`p-4 rounded-2xl border transition-all text-left ${
+                        className={`p-4 rounded-2xl border transition-all text-center ${
                           selections.refill === key
                             ? "border-[#BA797D] bg-[#F1DFDC]"
                             : "border-stone-200 bg-white"
@@ -2497,8 +2554,9 @@ const App = () => {
               {Object.keys(prices.spa).map((item) => (
                 <button
                   key={item}
+                  type="button"
                   onClick={() => toggleSelection("spa", item)}
-                  className={`p-4 rounded-2xl border transition-all ${
+                  className={`p-4 rounded-2xl border transition-all text-center ${
                     selections.spa.includes(item)
                       ? "border-[#BA797D] bg-[#F1DFDC]"
                       : "border-stone-200 bg-white"
@@ -2645,7 +2703,7 @@ const App = () => {
                   key={item}
                   type="button"
                   onClick={() => toggleSelection("removal", item)}
-                  className={`p-4 rounded-2xl border transition-all ${
+                  className={`p-4 rounded-2xl border transition-all text-center ${
                     selections.removal === item
                       ? "border-[#BA797D] bg-[#F1DFDC]"
                       : "border-stone-200 bg-white"
@@ -2685,6 +2743,7 @@ const App = () => {
                 ].map((d) => (
                   <button
                     key={d.k}
+                    type="button"
                     onClick={() =>
                       setSelections((p) => ({
                         ...p,
@@ -2707,6 +2766,7 @@ const App = () => {
                 {[50, 100, 200].map((v) => (
                   <button
                     key={v}
+                    type="button"
                     onClick={() =>
                       setSelections((p) => ({
                         ...p,
@@ -2765,6 +2825,7 @@ const App = () => {
           {/* 月份切換控制項 */}
           <div className="flex items-center justify-between bg-white p-3 rounded-2xl border border-stone-100 mb-6 shadow-sm">
             <button
+              type="button"
               onClick={() => changeMonth(-1)}
               className="w-10 h-10 flex items-center justify-center text-[#BA797D] hover:bg-[#F1DFDC] rounded-xl transition-colors"
             >
@@ -2779,6 +2840,7 @@ const App = () => {
               </span>
             </div>
             <button
+              type="button"
               onClick={() => changeMonth(1)}
               className="w-10 h-10 flex items-center justify-center text-[#BA797D] hover:bg-[#F1DFDC] rounded-xl transition-colors"
             >
@@ -2822,6 +2884,7 @@ const App = () => {
               {t("checkoutRecords")}
             </h3>
             <button
+              type="button"
               onClick={exportToCSV}
               className="text-[#BA797D] text-xs font-bold flex items-center gap-1"
             >
@@ -2849,6 +2912,7 @@ const App = () => {
                       ${r.amount}
                     </span>
                     <button
+                      type="button"
                       onClick={() => deleteRecord(r.id)}
                       className="text-stone-200 hover:text-red-400"
                     >
@@ -3538,6 +3602,7 @@ const App = () => {
             </div>
           </div>
           <button
+            type="button"
             onClick={() => setView("calculator")}
             className="w-full p-4 bg-[#BA797D] text-white rounded-[1.25rem] font-bold shadow-lg"
           >
@@ -3576,6 +3641,7 @@ const App = () => {
 
             <div className="flex gap-2">
               <button
+                type="button"
                 onClick={copyToClipboard}
                 className={`px-5 py-3 rounded-2xl font-bold flex items-center gap-1 transition-all ${
                   copied
@@ -3588,6 +3654,7 @@ const App = () => {
               </button>
 
               <button
+                type="button"
                 onClick={() => setShowModal(true)}
                 className="bg-[#BA797D] text-white px-6 py-3 rounded-2xl font-bold"
               >
@@ -3610,12 +3677,14 @@ const App = () => {
             </div>
             <div className="flex gap-2">
               <button
+                type="button"
                 onClick={() => setShowModal(false)}
                 className="flex-1 py-3 rounded-xl bg-stone-100 font-bold text-stone-500"
               >
                 {t("back")}
               </button>
               <button
+                type="button"
                 onClick={finalizePayment}
                 className="flex-[2] bg-[#BA797D] text-white py-3 px-6 rounded-xl font-bold"
               >
