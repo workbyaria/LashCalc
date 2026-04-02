@@ -474,9 +474,12 @@ const UI_STRINGS = {
     csvHeader: "日期時間,施作項目,總金額",
     csvFilename: "美甲營收報表_${month}.csv",
 
-    greetingMorning: "早安！${name} ，願今天預約也滿滿！",
-    greetingAfternoon: "午安！${name} ，今天也要開開心心工作唷！",
-    greetingNight: "晚安！${name}，忙碌中也別忘了好好休息、吃飯喔！",
+    greetingMorningLine1: "早安，${name}",
+    greetingMorningLine2: "願今天預約也滿滿！",
+    greetingAfternoonLine1: "午安，${name}",
+    greetingAfternoonLine2: "今天也要開開心心工作唷！",
+    greetingNightLine1: "晚安，${name}",
+    greetingNightLine2: "忙碌中也別忘了好好休息、吃飯喔！",
   },
   "zh-CN": {
     appTitle: "美甲算算 NailCalc",
@@ -565,9 +568,12 @@ const UI_STRINGS = {
     csvHeader: "日期时间,施作项目,总金额",
     csvFilename: "美甲营收报表_${month}.csv",
 
-    greetingMorning: "早安！${name} ，愿今天预约也满满！",
-    greetingAfternoon: "午安！${name} ，今天也要美美开工～",
-    greetingNight: "晚安！${name}，忙碌中也别忘了好好休息、吃饭喔！",
+    greetingMorningLine1: "早安，${name}",
+    greetingMorningLine2: "愿今天预约也满满！",
+    greetingAfternoonLine1: "午安，${name}",
+    greetingAfternoonLine2: "今天也要美美开工～",
+    greetingNightLine1: "晚安，${name}",
+    greetingNightLine2: "忙碌中也别忘了好好休息、吃饭喔！",
   },
   en: {
     appTitle: "NailCalc",
@@ -657,10 +663,12 @@ const UI_STRINGS = {
     csvHeader: "Date/time,Service items,Total",
     csvFilename: "nail_revenue_${month}.csv",
 
-    greetingMorning: "Good morning, ${name}! Hope your bookings are full today!",
-    greetingAfternoon: "Good afternoon, ${name}! Have a great day!",
-    greetingNight:
-      "Good evening, ${name}! Don’t forget to rest and eat well!",
+    greetingMorningLine1: "Good morning, ${name}",
+    greetingMorningLine2: "Hope your bookings are full today!",
+    greetingAfternoonLine1: "Good afternoon, ${name}",
+    greetingAfternoonLine2: "Have a great shift today!",
+    greetingNightLine1: "Good evening, ${name}",
+    greetingNightLine2: "Don’t forget to rest and eat well.",
   },
 };
 
@@ -1209,15 +1217,25 @@ const App = () => {
     </div>
   );
 
-  const greetingText = useMemo(() => {
+  const greetingLines = useMemo(() => {
     const hour = new Date().getHours();
+    const name = studioName;
     if (hour >= 5 && hour <= 11) {
-      return tString(locale, "greetingMorning", { name: studioName });
+      return {
+        line1: tString(locale, "greetingMorningLine1", { name }),
+        line2: tString(locale, "greetingMorningLine2", { name }),
+      };
     }
     if (hour >= 12 && hour <= 17) {
-      return tString(locale, "greetingAfternoon", { name: studioName });
+      return {
+        line1: tString(locale, "greetingAfternoonLine1", { name }),
+        line2: tString(locale, "greetingAfternoonLine2", { name }),
+      };
     }
-    return tString(locale, "greetingNight", { name: studioName });
+    return {
+      line1: tString(locale, "greetingNightLine1", { name }),
+      line2: tString(locale, "greetingNightLine2", { name }),
+    };
   }, [locale, studioName]);
 
   return (
@@ -1281,7 +1299,10 @@ const App = () => {
       {view === "calculator" && (
         <div className="p-5 max-w-lg mx-auto space-y-8">
           <p className="w-full text-center text-[#9F7D6B] text-[12px] font-bold leading-snug py-2.5 px-4 bg-white/60 border border-stone-200 rounded-3xl">
-            {greetingText}
+            <span className="block">{greetingLines.line1}</span>
+            <span className="block mt-1 text-[11px] font-semibold text-[#9F7D6B]/90">
+              {greetingLines.line2}
+            </span>
           </p>
           {/* 卸甲服務 */}
           <section>
