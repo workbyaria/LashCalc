@@ -401,23 +401,42 @@ const UI_STRINGS = {
     pricingTitle: "價格設定",
     pricingLabel: "Pricing",
 
-    sectionRemovalTitle: "卸除服務",
+    sectionRemovalTitle: "卸除睫毛",
     sectionRemovalLabel: "Removal",
-    sectionBaseTitle: "款式基礎",
-    sectionBaseLabel: "Base Style",
+    sectionServiceTypeTitle: "服務類型",
+    sectionServiceTypeLabel: "Service",
+    sectionRefillPricingTitle: "補睫毛計價",
+    sectionRefillPricingLabel: "Refill",
+    sectionBaseAdminLabel: "Categories",
     sectionAddonsTitle: "加購造型",
     sectionAddonsLabel: "Add-ons",
     sectionSpaTitle: "護理保養",
     sectionSpaLabel: "Spa & Care",
-    sectionOthersTitle: "其他加購",
-    sectionOthersLabel: "Others",
+    sectionOthersTitle: "產品加購",
+    sectionOthersLabel: "Products",
+    sectionProductLabel: "Products",
     sectionDiscountTitle: "優惠折抵",
     sectionDiscountLabel: "Discount",
 
     perFinger: "/ 指",
+    perProductUnit: "/ 件",
 
-    otherProduct: "產品加購",
-    otherService: "其他服務",
+    otherService: "其他",
+
+    refillPricingSettingsTitle: "補睫毛計價（結帳顯示）",
+    refillModeWeeks: "依週數",
+    refillModeRoots: "依根數",
+    refillPricingModeHint: "選擇結帳時要顯示週數方案或根數方案。兩組價格皆可在此編輯。",
+    newRefillWeekTitle: "新增週數方案",
+    newRefillRootTitle: "新增根數方案",
+    refillTierNamePh: "方案名稱",
+    ariaDeleteRefillWeek: "刪除週數方案",
+    ariaDeleteRefillRoot: "刪除根數方案",
+    errRefillTierName: "請輸入方案名稱",
+    errRefillTierDup: "此方案名稱已存在",
+
+    lineServiceType: "服務類型",
+    lineRefillPricing: "補睫毛計價",
 
     discountNone: "無",
     discount95: "95折",
@@ -452,27 +471,42 @@ const UI_STRINGS = {
     addItem: "新增項目",
     ariaDeleteAddon: "刪除加購項目",
 
-    newBaseTitle: "新增款式項目",
-    baseNamePh: "款式名稱",
-    ariaDeleteBase: "刪除款式項目",
+    newProductTitle: "新增產品項目",
+    productNamePh: "產品名稱",
+    ariaDeleteProduct: "刪除產品項目",
 
-    newRemovalTitle: "新增卸除/補睫毛服務項目",
-    removalNamePh: "卸除/補睫毛服務名稱",
-    ariaDeleteRemoval: "刪除卸除/補睫毛服務項目",
+    newBaseTitle: "在類別下新增子款式",
+    baseNamePh: "子款式名稱（例：100 根/泰式）",
+    newBaseCategoryTitle: "新增款式類別",
+    baseCategoryPh: "類別名稱（例：自然款）",
+    baseSubCategoryLabel: "所屬類別",
+    baseEmptyHint: "此類別尚無子款式，請至設定新增",
+    ariaDeleteBase: "刪除子款式",
+    ariaDeleteBaseCategory: "刪除款式類別",
 
-    newSpaTitle: "新增 SPA 服務項目",
-    spaNamePh: "SPA 服務名稱",
-    ariaDeleteSpa: "刪除 SPA 服務項目",
+    newRemovalTitle: "新增卸除服務項目",
+    removalNamePh: "美睫服務名稱",
+    ariaDeleteRemoval: "刪除卸除睫毛服務項目",
+
+    newSpaTitle: "新增護理項目",
+    spaNamePh: "護理名稱",
+    ariaDeleteSpa: "刪除護理項目",
 
     errAddonName: "請輸入加購名稱",
     errPrice: "請輸入有效價格",
     errAddonDup: "此加購名稱已存在",
-    errBaseName: "請輸入款式名稱",
-    errBaseDup: "此款式名稱已存在",
+    errProductName: "請輸入產品名稱",
+    errProductDup: "此產品名稱已存在",
+    errBaseName: "請輸入子款式名稱",
+    errBaseDup: "此類別下已有相同子款式名稱",
+    errBaseCategoryName: "請輸入類別名稱",
+    errBaseCategoryDup: "此類別名稱已存在",
+    errBaseSubName: "請輸入子款式名稱",
+    errBaseSubDup: "此類別下已有相同子款式名稱",
     errRemovalName: "請輸入卸除/補睫毛服務名稱",
     errRemovalDup: "此卸除/補睫毛服務名稱已存在",
-    errSpaName: "請輸入 SPA 服務名稱",
-    errSpaDup: "此 SPA 服務名稱已存在",
+    errSpaName: "請輸入護理服務名稱",
+    errSpaDup: "此護理服務名稱已存在",
 
     summaryTitle: "消費明細",
     summaryThanks: "感謝您的預約，祝您有美好的一天！",
@@ -507,23 +541,42 @@ const UI_STRINGS = {
     pricingTitle: "价格设置",
     pricingLabel: "Pricing",
 
-    sectionRemovalTitle: "卸除服务",
+    sectionRemovalTitle: "卸除睫毛",
     sectionRemovalLabel: "Removal",
-    sectionBaseTitle: "款式基础",
-    sectionBaseLabel: "Base Style",
+    sectionServiceTypeTitle: "服务类型",
+    sectionServiceTypeLabel: "Service",
+    sectionRefillPricingTitle: "补睫毛计价",
+    sectionRefillPricingLabel: "Refill",
+    sectionBaseAdminLabel: "Categories",
     sectionAddonsTitle: "加购造型",
     sectionAddonsLabel: "Add-ons",
     sectionSpaTitle: "护理保养",
     sectionSpaLabel: "Spa & Care",
-    sectionOthersTitle: "其他加购",
-    sectionOthersLabel: "Others",
+    sectionOthersTitle: "产品加购",
+    sectionOthersLabel: "Products",
+    sectionProductLabel: "Products",
     sectionDiscountTitle: "优惠抵扣",
     sectionDiscountLabel: "Discount",
 
     perFinger: "/ 指",
+    perProductUnit: "/ 件",
 
-    otherProduct: "产品加购",
-    otherService: "其他服务",
+    otherService: "其他",
+
+    refillPricingSettingsTitle: "补睫毛计价（结账显示）",
+    refillModeWeeks: "按周数",
+    refillModeRoots: "按根数",
+    refillPricingModeHint: "选择结账时显示周数方案或根数方案。两组价格均可在此编辑。",
+    newRefillWeekTitle: "新增周数方案",
+    newRefillRootTitle: "新增根数方案",
+    refillTierNamePh: "方案名称",
+    ariaDeleteRefillWeek: "删除周数方案",
+    ariaDeleteRefillRoot: "删除根数方案",
+    errRefillTierName: "请输入方案名称",
+    errRefillTierDup: "该方案名称已存在",
+
+    lineServiceType: "服务类型",
+    lineRefillPricing: "补睫毛计价",
 
     discountNone: "无",
     discount95: "95折",
@@ -558,9 +611,18 @@ const UI_STRINGS = {
     addItem: "新增项目",
     ariaDeleteAddon: "删除加购项目",
 
-    newBaseTitle: "新增款式项目",
-    baseNamePh: "款式名称",
-    ariaDeleteBase: "删除款式项目",
+    newProductTitle: "新增产品项目",
+    productNamePh: "产品名称",
+    ariaDeleteProduct: "删除产品项目",
+
+    newBaseTitle: "在大类下新增子款式",
+    baseNamePh: "子款式名称",
+    newBaseCategoryTitle: "新增款式大类",
+    baseCategoryPh: "大类名称（例：自然款）",
+    baseSubCategoryLabel: "所属大类",
+    baseEmptyHint: "此大类尚无子款式，请至设置新增",
+    ariaDeleteBase: "删除子款式",
+    ariaDeleteBaseCategory: "删除款式大类",
 
     newRemovalTitle: "新增卸除/补睫毛服务项目",
     removalNamePh: "卸除/补睫毛服务名称",
@@ -573,8 +635,14 @@ const UI_STRINGS = {
     errAddonName: "请输入加购名称",
     errPrice: "请输入有效价格",
     errAddonDup: "该加购名称已存在",
-    errBaseName: "请输入款式名称",
-    errBaseDup: "该款式名称已存在",
+    errProductName: "请输入产品名称",
+    errProductDup: "该产品名称已存在",
+    errBaseName: "请输入子款式名称",
+    errBaseDup: "该大类下已有相同子款式名称",
+    errBaseCategoryName: "请输入大类名称",
+    errBaseCategoryDup: "该大类名称已存在",
+    errBaseSubName: "请输入子款式名称",
+    errBaseSubDup: "该大类下已有相同子款式名称",
     errRemovalName: "请输入卸除/补睫毛服务名称",
     errRemovalDup: "此卸除/补睫毛服务名称已存在",
     errSpaName: "请输入 SPA 服务名称",
@@ -614,23 +682,43 @@ const UI_STRINGS = {
     pricingTitle: "Pricing",
     pricingLabel: "Pricing",
 
-    sectionRemovalTitle: "Removal",
+    sectionRemovalTitle: "Eyelash removal",
     sectionRemovalLabel: "Removal",
-    sectionBaseTitle: "Base Style",
-    sectionBaseLabel: "Base Style",
+    sectionServiceTypeTitle: "Service type",
+    sectionServiceTypeLabel: "Service",
+    sectionRefillPricingTitle: "Refill pricing",
+    sectionRefillPricingLabel: "Refill",
+    sectionBaseAdminLabel: "Categories",
     sectionAddonsTitle: "Add-ons",
     sectionAddonsLabel: "Add-ons",
     sectionSpaTitle: "Spa & Care",
     sectionSpaLabel: "Spa & Care",
-    sectionOthersTitle: "Other Services",
-    sectionOthersLabel: "Others",
+    sectionOthersTitle: "Product add-ons",
+    sectionOthersLabel: "Products",
+    sectionProductLabel: "Products",
     sectionDiscountTitle: "Discounts",
     sectionDiscountLabel: "Discount",
 
     perFinger: "/ nail",
+    perProductUnit: "/ pc",
 
-    otherProduct: "Product add-on",
-    otherService: "Additional services",
+    otherService: "Other",
+
+    refillPricingSettingsTitle: "Refill pricing (checkout)",
+    refillModeWeeks: "By week",
+    refillModeRoots: "By root count",
+    refillPricingModeHint:
+      "Choose whether checkout shows week-based or root-based tiers. You can edit both lists below.",
+    newRefillWeekTitle: "Add week tier",
+    newRefillRootTitle: "Add root tier",
+    refillTierNamePh: "Tier name",
+    ariaDeleteRefillWeek: "Delete week tier",
+    ariaDeleteRefillRoot: "Delete root tier",
+    errRefillTierName: "Please enter a tier name",
+    errRefillTierDup: "This tier name already exists",
+
+    lineServiceType: "Service type",
+    lineRefillPricing: "Refill pricing",
 
     discountNone: "None",
     discount95: "5% off",
@@ -665,9 +753,18 @@ const UI_STRINGS = {
     addItem: "Add item",
     ariaDeleteAddon: "Delete add-on item",
 
-    newBaseTitle: "Add base style item",
-    baseNamePh: "Style name",
-    ariaDeleteBase: "Delete base style item",
+    newProductTitle: "Add product item",
+    productNamePh: "Product name",
+    ariaDeleteProduct: "Delete product item",
+
+    newBaseTitle: "Add sub-style under a category",
+    baseNamePh: "Sub-style name",
+    newBaseCategoryTitle: "Add style category",
+    baseCategoryPh: "Category (e.g. Classic)",
+    baseSubCategoryLabel: "Category",
+    baseEmptyHint: "No sub-styles yet — add them in Settings",
+    ariaDeleteBase: "Delete sub-style",
+    ariaDeleteBaseCategory: "Delete style category",
 
     newRemovalTitle: "Add removal/refill service item",
     removalNamePh: "Removal/refill service name",
@@ -680,8 +777,14 @@ const UI_STRINGS = {
     errAddonName: "Please enter an item name",
     errPrice: "Please enter a valid price",
     errAddonDup: "This item name already exists",
-    errBaseName: "Please enter a style name",
-    errBaseDup: "This style name already exists",
+    errProductName: "Please enter a product name",
+    errProductDup: "This product name already exists",
+    errBaseName: "Please enter a sub-style name",
+    errBaseDup: "This sub-style already exists in the category",
+    errBaseCategoryName: "Please enter a category name",
+    errBaseCategoryDup: "This category name already exists",
+    errBaseSubName: "Please enter a sub-style name",
+    errBaseSubDup: "This sub-style already exists in the category",
     errRemovalName: "Please enter a removal/refill service name",
     errRemovalDup: "This removal/refill service name already exists",
     errSpaName: "Please enter a spa service name",
@@ -731,21 +834,48 @@ const PRICE_LABELS = {
     base: {
       自然款: "自然款",
       濃密款: "濃密款",
-      造型款: "造型款",
+      設計款: "設計款",
       客製款: "客製款",
+    },
+    baseStyle: {
+      "100 根": "100 根",
+      "120 根": "120 根",
+      "150 根": "150 根",
+      "100根": "100根",
+      "120根": "120根",
+      "150根": "150根",
+      "200根": "200根",
+      "250根": "250根",
+      "300根": "300根",
+      "400根": "400根",
+      "500根": "500根",
+      依現場: "依現場",
     },
     addons: {
       "根數(每根)": "根數",
       下睫毛: "下睫毛",
-      延甲: "延甲",
-      水晶: "水晶",
-      手繪: "手繪",
-      裝飾: "裝飾",
     },
     spa: {
       睫毛SPA: "睫毛SPA",
       深層清潔: "深層清潔",
       睫毛角蛋白: "睫毛角蛋白",
+    },
+    products: {
+      睫毛雨衣: "睫毛雨衣",
+      睫毛生長液: "睫毛生長液",
+    },
+    serviceType: {
+      新接: "新嫁接",
+      補睫毛: "補睫毛",
+    },
+    refill: {
+      "1週內": "1 週內",
+      "2週內": "2 週內",
+      "3週內": "3 週內",
+      "4週內": "4 週內",
+      "50根": "50 根",
+      "80根": "80 根",
+      "100根": "100 根",
     },
   },
   "zh-CN": {
@@ -758,21 +888,48 @@ const PRICE_LABELS = {
     base: {
       自然款: "自然款",
       濃密款: "浓密款",
-      造型款: "造型款",
+      設計款: "设计款",
       客製款: "客制款",
+    },
+    baseStyle: {
+      "100 根": "100 根",
+      "120 根": "120 根",
+      "150 根": "150 根",
+      "100根": "100根",
+      "120根": "120根",
+      "150根": "150根",
+      "200根": "200根",
+      "250根": "250根",
+      "300根": "300根",
+      "400根": "400根",
+      "500根": "500根",
+      依現場: "依现场",
     },
     addons: {
       "根数(每根)": "根数",
       下睫毛: "下睫毛",
-      延甲: "延长",
-      水晶: "水晶",
-      手繪: "手绘",
-      裝飾: "装饰",
     },
     spa: {
       睫毛SPA: "睫毛SPA",
       深層清潔: "深层清洁",
       睫毛角蛋白: "睫毛角蛋白",
+    },
+    products: {
+      睫毛雨衣: "睫毛雨衣",
+      睫毛生長液: "睫毛生长液",
+    },
+    serviceType: {
+      新嫁接: "新嫁接",
+      補睫毛: "补睫毛",
+    },
+    refill: {
+      "1週內": "1周内",
+      "2週內": "2周内",
+      "3週內": "3周内",
+      "4週內": "4周内",
+      "50根": "50根",
+      "80根": "80根",
+      "100根": "100根",
     },
   },
   en: {
@@ -785,8 +942,22 @@ const PRICE_LABELS = {
     base: {
       自然款: "Classic",
       濃密款: "Volume",
-      造型款: "Design",
+      設計款: "Design",
       客製款: "Custom",
+    },
+    baseStyle: {
+      "100 根": "100 roots",
+      "120 根": "120 roots",
+      "150 根": "150 roots",
+      "100根": "100 roots",
+      "120根": "120 roots",
+      "150根": "150 roots",
+      "200根": "200 roots",
+      "250根": "250 roots",
+      "300根": "300 roots",
+      "400根": "400 roots",
+      "500根": "500 roots",
+      依現場: "On-site quote",
     },
     addons: {
       "根數(每根)": "Root count",
@@ -801,6 +972,23 @@ const PRICE_LABELS = {
       深層清潔: "Deep Cleaning",
       睫毛角蛋白: "Lash Keratin",
     },
+    products: {
+      睫毛雨衣: "Lash top coat",
+      睫毛生長液: "Lash growth serum",
+    },
+    serviceType: {
+      新接: "New set",
+      補睫毛: "Refill",
+    },
+    refill: {
+      "1週內": "Within 1 wk",
+      "2週內": "Within 2 wks",
+      "3週內": "Within 3 wks",
+      "4週內": "Within 4 wks",
+      "50根": "50 roots",
+      "80根": "80 roots",
+      "100根": "100 roots",
+    },
   },
 };
 
@@ -810,33 +998,84 @@ const priceItemLabel = (locale, cat, key) => {
   return key;
 };
 
-const ROOT_COUNT_ADDON_KEY = "根數(每根)";
+/** @param {{ category: string, style: string } | null} sel */
+const formatBaseSelectionLabel = (locale, sel) => {
+  if (!sel) return "";
+  const cat = priceItemLabel(locale, "base", sel.category);
+  const st = priceItemLabel(locale, "baseStyle", sel.style);
+  return `${cat} · ${st}`;
+};
+
+/** 款式子項目數量 → Tailwind 網格：1＝滿寬一列；3 的倍數＝三欄；其餘＝二欄（含 2、4 與奇數） */
+const getBaseRootButtonGridClass = (n) => {
+  if (n <= 1) return "grid grid-cols-1 gap-2";
+  if (n % 3 === 0) return "grid grid-cols-3 gap-2";
+  return "grid grid-cols-2 gap-2";
+};
+
 const LOWER_LASH_ADDON_KEY = "下睫毛";
 
-const ROOT_COUNT_PRESETS = [10, 15, 20];
+const LOWER_LASH_PRESETS = [10, 15, 20];
 
-// Add-ons in this app:
-// - 根數(每根)：使用者可透過數量輸入「任意根數」（並提供 10/15/20 快選）
-// - 下睫毛：下睫毛服務加價（用數量切換 0/1）
+// 加購造型：下睫毛為每根單價 × 根數（10/15/20 快選，按鈕僅顯示數字）
 const DEFAULT_ADDONS = {
-  [ROOT_COUNT_ADDON_KEY]: 0,
   [LOWER_LASH_ADDON_KEY]: 0,
 };
+
+/** 自舊版移除「根數(每根)」預設加購 */
+const LEGACY_ROOT_COUNT_ADDON_KEY = "根數(每根)";
 const CUSTOM_ADDONS_STORAGE_KEY = "nail_custom_addons";
-const DEFAULT_BASE_STYLES = {
+
+/** 舊版平面結構（僅供從 localStorage 遷移） */
+const DEFAULT_BASE_STYLES_FLAT_LEGACY = {
   自然款: 900,
   濃密款: 1000,
   造型款: 1200,
   客製款: 1400,
 };
+
+/** 款式類別 → 根數方案（子按鈕標籤）→ 單價 */
+const DEFAULT_BASE_NESTED = {
+  自然款: { "100 根": 0, "120 根": 0, "150 根": 0 },
+  濃密款: { "200根": 0, "300根": 0, "400根": 0, "500根": 0 },
+  設計款: { "200根": 0, "250根": 0, "300根": 0 },
+  客製款: { 依現場: 0 },
+};
+
 const CUSTOM_BASE_STYLES_STORAGE_KEY = "nail_custom_base_styles";
 
-// V2: 直接覆蓋整份設定，支援刪除預設項目並持久化
+// V2: 平面覆蓋（舊版）；V3: 類別＋子款式巢狀
 const BASE_STYLES_OVERRIDE_STORAGE_KEY = "lash_base_styles_v2";
+const BASE_STYLES_NESTED_STORAGE_KEY = "lash_base_styles_v3";
 const ADDONS_OVERRIDE_STORAGE_KEY = "lash_addons_v2";
 
 const SPA_OVERRIDE_STORAGE_KEY = "lash_spa_v2";
 const REMOVAL_OVERRIDE_STORAGE_KEY = "lash_removal_v2";
+const PRODUCTS_OVERRIDE_STORAGE_KEY = "lash_products_v1";
+const REFILL_CONFIG_STORAGE_KEY = "lash_refill_config_v1";
+
+const SERVICE_TYPE_NEW = "新嫁接";
+const SERVICE_TYPE_REFILL = "補睫毛";
+const REFILL_MODE_WEEKS = "weeks";
+const REFILL_MODE_ROOTS = "roots";
+
+const DEFAULT_REFILL_WEEKS = {
+  "1週內": 0,
+  "2週內": 0,
+  "3週內": 0,
+  "4週內": 0,
+};
+const DEFAULT_REFILL_ROOTS = {
+  "50根": 0,
+  "80根": 0,
+  "100根": 0,
+};
+
+/** 產品加購：品項 → 單價（預設兩項，店家可於設定調整／增刪） */
+const DEFAULT_PRODUCTS = {
+  睫毛雨衣: 0,
+  睫毛生長液: 0,
+};
 
 const DEFAULT_SPA_SERVICES = {
   睫毛SPA: 300,
@@ -907,8 +1146,71 @@ const getStoredOverrideMap = (storageKey) => {
   }
 };
 
-const getStoredBaseStylesOverride = () =>
-  getStoredOverrideMap(BASE_STYLES_OVERRIDE_STORAGE_KEY);
+/** 將任意已存資料正規化為 類別→{子款式→價格}（含舊版平面價） */
+const normalizeBaseNested = (parsed) => {
+  if (!parsed || typeof parsed !== "object") return null;
+  const out = {};
+  for (const [cat, val] of Object.entries(parsed)) {
+    if (typeof cat !== "string" || !cat.trim()) continue;
+    if (typeof val === "number" && Number.isFinite(val) && val >= 0) {
+      out[cat] = { [cat]: val };
+      continue;
+    }
+    if (val && typeof val === "object" && !Array.isArray(val)) {
+      const styles = Object.fromEntries(
+        Object.entries(val).filter(
+          ([sn, p]) =>
+            typeof sn === "string" &&
+            sn.trim() &&
+            typeof p === "number" &&
+            Number.isFinite(p) &&
+            p >= 0
+        )
+      );
+      out[cat] = styles;
+    }
+  }
+  return Object.keys(out).length ? out : null;
+};
+
+const migrateLegacyFlatBase = (flat) => {
+  const nested = {};
+  for (const [cat, price] of Object.entries(flat)) {
+    if (typeof price !== "number" || !Number.isFinite(price) || price < 0)
+      continue;
+    const categoryKey = cat === "造型款" ? "設計款" : cat;
+    nested[categoryKey] = { ...(nested[categoryKey] || {}), [cat]: price };
+  }
+  return nested;
+};
+
+const getStoredBaseNested = () => {
+  try {
+    const rawV3 = localStorage.getItem(BASE_STYLES_NESTED_STORAGE_KEY);
+    if (rawV3) {
+      const n = normalizeBaseNested(JSON.parse(rawV3));
+      if (n) return n;
+    }
+  } catch {
+    // ignore
+  }
+  try {
+    const rawV2 = localStorage.getItem(BASE_STYLES_OVERRIDE_STORAGE_KEY);
+    if (rawV2) {
+      const parsed = JSON.parse(rawV2);
+      const n = normalizeBaseNested(parsed);
+      if (n) return n;
+    }
+  } catch {
+    // ignore
+  }
+  const flat = getStoredOverrideMap(BASE_STYLES_OVERRIDE_STORAGE_KEY);
+  if (flat && Object.keys(flat).length) return migrateLegacyFlatBase(flat);
+  const custom = getStoredCustomBaseStyles();
+  if (custom && Object.keys(custom).length)
+    return migrateLegacyFlatBase(custom);
+  return null;
+};
 
 const getStoredAddonsOverride = () =>
   getStoredOverrideMap(ADDONS_OVERRIDE_STORAGE_KEY);
@@ -917,6 +1219,40 @@ const getStoredSpaOverride = () => getStoredOverrideMap(SPA_OVERRIDE_STORAGE_KEY
 
 const getStoredRemovalOverride = () =>
   getStoredOverrideMap(REMOVAL_OVERRIDE_STORAGE_KEY);
+
+const getStoredProductsOverride = () =>
+  getStoredOverrideMap(PRODUCTS_OVERRIDE_STORAGE_KEY);
+
+const normalizePriceMap = (o) => {
+  if (!o || typeof o !== "object") return null;
+  const entries = Object.entries(o).filter(
+    ([k, v]) =>
+      typeof k === "string" &&
+      k.trim() &&
+      typeof v === "number" &&
+      Number.isFinite(v) &&
+      v >= 0
+  );
+  return entries.length ? Object.fromEntries(entries) : null;
+};
+
+const getStoredRefillConfig = () => {
+  try {
+    const raw = localStorage.getItem(REFILL_CONFIG_STORAGE_KEY);
+    if (!raw) return null;
+    const p = JSON.parse(raw);
+    if (!p || typeof p !== "object") return null;
+    const mode =
+      p.mode === REFILL_MODE_ROOTS ? REFILL_MODE_ROOTS : REFILL_MODE_WEEKS;
+    return {
+      mode,
+      weeks: normalizePriceMap(p.weeks),
+      roots: normalizePriceMap(p.roots),
+    };
+  } catch {
+    return null;
+  }
+};
 
 const getStoredCustomSpa = () => {
   try {
@@ -962,8 +1298,23 @@ const App = () => {
   const [newAddonName, setNewAddonName] = useState("");
   const [newAddonPrice, setNewAddonPrice] = useState("");
   const [addonFormError, setAddonFormError] = useState("");
-  const [newBaseName, setNewBaseName] = useState("");
-  const [newBasePrice, setNewBasePrice] = useState("");
+  const [newProductName, setNewProductName] = useState("");
+  const [newProductPrice, setNewProductPrice] = useState("");
+  const [productFormError, setProductFormError] = useState("");
+  const [refillPricingMode, setRefillPricingMode] = useState(() => {
+    const c = getStoredRefillConfig();
+    return c?.mode === REFILL_MODE_ROOTS ? REFILL_MODE_ROOTS : REFILL_MODE_WEEKS;
+  });
+  const [newRefillWeekName, setNewRefillWeekName] = useState("");
+  const [newRefillWeekPrice, setNewRefillWeekPrice] = useState("");
+  const [newRefillRootName, setNewRefillRootName] = useState("");
+  const [newRefillRootPrice, setNewRefillRootPrice] = useState("");
+  const [refillWeekFormError, setRefillWeekFormError] = useState("");
+  const [refillRootFormError, setRefillRootFormError] = useState("");
+  const [newBaseCategoryName, setNewBaseCategoryName] = useState("");
+  const [newSubStyleCategory, setNewSubStyleCategory] = useState("");
+  const [newSubStyleName, setNewSubStyleName] = useState("");
+  const [newSubStylePrice, setNewSubStylePrice] = useState("");
   const [baseFormError, setBaseFormError] = useState("");
   const [newRemovalName, setNewRemovalName] = useState("");
   const [newRemovalPrice, setNewRemovalPrice] = useState("");
@@ -994,9 +1345,21 @@ const App = () => {
 
   useEffect(() => {
     setAddonFormError("");
+    setProductFormError("");
     setBaseFormError("");
     setRemovalFormError("");
     setSpaFormError("");
+    setNewBaseCategoryName("");
+    setNewSubStyleName("");
+    setNewSubStylePrice("");
+    setNewProductName("");
+    setNewProductPrice("");
+    setNewRefillWeekName("");
+    setNewRefillWeekPrice("");
+    setNewRefillRootName("");
+    setNewRefillRootPrice("");
+    setRefillWeekFormError("");
+    setRefillRootFormError("");
   }, [locale]);
 
   // 同步工作室名稱
@@ -1020,22 +1383,44 @@ const App = () => {
         "他店 / 純卸除": 500,
         "他店 / 卸除續作": 300,
       },
-    base: {
-      ...(getStoredBaseStylesOverride() ?? {
-        ...DEFAULT_BASE_STYLES,
-        ...getStoredCustomBaseStyles(),
-      }),
-    },
-    addons: getStoredAddonsOverride() ?? {
-      ...DEFAULT_ADDONS,
-      ...getStoredCustomAddons(),
-    },
+    base: getStoredBaseNested() ?? { ...DEFAULT_BASE_NESTED },
+    addons: (() => {
+      const merged = {
+        ...DEFAULT_ADDONS,
+        ...(getStoredAddonsOverride() ?? {}),
+        ...getStoredCustomAddons(),
+      };
+      const { [LEGACY_ROOT_COUNT_ADDON_KEY]: _removed, ...rest } = merged;
+      return rest;
+    })(),
     spa:
       getStoredSpaOverride() ?? {
         ...DEFAULT_SPA_SERVICES,
         ...getStoredCustomSpa(),
       },
+    products: getStoredProductsOverride() ?? { ...DEFAULT_PRODUCTS },
+    refillWeeks: (() => {
+      const c = getStoredRefillConfig();
+      return c?.weeks ?? { ...DEFAULT_REFILL_WEEKS };
+    })(),
+    refillRoots: (() => {
+      const c = getStoredRefillConfig();
+      return c?.roots ?? { ...DEFAULT_REFILL_ROOTS };
+    })(),
   }));
+
+  const [selections, setSelections] = useState({
+    serviceType: null,
+    removal: null,
+    base: null,
+    refill: null,
+    addons: {},
+    spa: [],
+    products: {},
+    customOther: 0,
+    discountType: "none",
+    discountVal: 0,
+  });
 
   // 同步自訂加購到本機儲存
   useEffect(() => {
@@ -1051,23 +1436,16 @@ const App = () => {
     localStorage.setItem(CUSTOM_ADDONS_STORAGE_KEY, JSON.stringify(customAddons));
   }, [prices.addons]);
 
-  // 同步自訂款式到本機儲存
+  // 同步款式（類別＋子款式）到本機儲存
   useEffect(() => {
-    const customBase = Object.fromEntries(
-      Object.entries(prices.base).filter(
-        ([name]) => !(name in DEFAULT_BASE_STYLES)
-      )
-    );
-    // V2 override：支援刪除預設項目並持久化
-    localStorage.setItem(
-      BASE_STYLES_OVERRIDE_STORAGE_KEY,
-      JSON.stringify(prices.base)
-    );
-    // 舊 key：保留相容用
-    localStorage.setItem(
-      CUSTOM_BASE_STYLES_STORAGE_KEY,
-      JSON.stringify(customBase)
-    );
+    try {
+      localStorage.setItem(
+        BASE_STYLES_NESTED_STORAGE_KEY,
+        JSON.stringify(prices.base)
+      );
+    } catch {
+      // ignore
+    }
   }, [prices.base]);
 
   // 同步自訂 SPA 到本機儲存
@@ -1091,31 +1469,61 @@ const App = () => {
     );
   }, [prices.removal]);
 
-  // 選擇狀態
-  const [selections, setSelections] = useState({
-    removal: null,
-    base: null,
-    addons: {},
-    spa: [],
-    customProduct: 0,
-    customOther: 0,
-    discountType: "none",
-    discountVal: 0,
-  });
+  useEffect(() => {
+    try {
+      localStorage.setItem(
+        PRODUCTS_OVERRIDE_STORAGE_KEY,
+        JSON.stringify(prices.products)
+      );
+    } catch {
+      // ignore
+    }
+  }, [prices.products]);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(
+        REFILL_CONFIG_STORAGE_KEY,
+        JSON.stringify({
+          mode: refillPricingMode,
+          weeks: prices.refillWeeks,
+          roots: prices.refillRoots,
+        })
+      );
+    } catch {
+      // ignore
+    }
+  }, [refillPricingMode, prices.refillWeeks, prices.refillRoots]);
 
   // 計算邏輯
   const getSubtotal = () => {
     let subtotal = 0;
-    if (selections.removal) subtotal += prices.removal[selections.removal] || 0;
-    if (selections.base) subtotal += prices.base[selections.base] || 0;
+    if (selections.base) {
+      const { category, style } = selections.base;
+      subtotal += prices.base[category]?.[style] || 0;
+    }
+    if (
+      selections.serviceType === SERVICE_TYPE_REFILL &&
+      selections.refill
+    ) {
+      const tbl =
+        refillPricingMode === REFILL_MODE_WEEKS
+          ? prices.refillWeeks
+          : prices.refillRoots;
+      subtotal += tbl[selections.refill] || 0;
+    }
     Object.keys(selections.addons).forEach((key) => {
       subtotal += (prices.addons[key] || 0) * (selections.addons[key] || 0);
     });
     selections.spa.forEach((item) => {
       subtotal += prices.spa[item] || 0;
     });
-    subtotal += Number(selections.customProduct) || 0;
+    Object.keys(selections.products || {}).forEach((key) => {
+      subtotal +=
+        (prices.products[key] || 0) * (selections.products[key] || 0);
+    });
     subtotal += Number(selections.customOther) || 0;
+    if (selections.removal) subtotal += prices.removal[selections.removal] || 0;
     return subtotal;
   };
 
@@ -1131,14 +1539,32 @@ const App = () => {
 
   const generateSummaryText = () => {
     let text = `🤍 ${studioName} ${t("summaryTitle")} 🤍\n----------------------\n`;
-    if (selections.removal)
-      text += `▫️ ${priceItemLabel(locale, "removal", selections.removal)}: $${
-        prices.removal[selections.removal]
+    if (selections.serviceType)
+      text += `▫️ ${t("lineServiceType")}: ${priceItemLabel(
+        locale,
+        "serviceType",
+        selections.serviceType
+      )}\n`;
+    if (selections.base) {
+      const { category, style } = selections.base;
+      text += `▫️ ${formatBaseSelectionLabel(locale, selections.base)}: $${
+        prices.base[category]?.[style] ?? 0
       }\n`;
-    if (selections.base)
-      text += `▫️ ${priceItemLabel(locale, "base", selections.base)}: $${
-        prices.base[selections.base]
-      }\n`;
+    }
+    if (
+      selections.serviceType === SERVICE_TYPE_REFILL &&
+      selections.refill
+    ) {
+      const tbl =
+        refillPricingMode === REFILL_MODE_WEEKS
+          ? prices.refillWeeks
+          : prices.refillRoots;
+      text += `▫️ ${t("lineRefillPricing")}: ${priceItemLabel(
+        locale,
+        "refill",
+        selections.refill
+      )} $${tbl[selections.refill] ?? 0}\n`;
+    }
     Object.keys(selections.addons).forEach((key) => {
       if (selections.addons[key] > 0)
         text += `▫️ ${priceItemLabel(locale, "addons", key)} x${
@@ -1148,10 +1574,19 @@ const App = () => {
     selections.spa.forEach((item) => {
       text += `▫️ ${priceItemLabel(locale, "spa", item)}: $${prices.spa[item]}\n`;
     });
-    if (selections.customProduct > 0)
-      text += `▫️ ${t("lineProduct")}: $${selections.customProduct}\n`;
+    Object.keys(selections.products || {}).forEach((key) => {
+      const q = selections.products[key] || 0;
+      if (q > 0)
+        text += `▫️ ${priceItemLabel(locale, "products", key)} x${q}: $${
+          (prices.products[key] || 0) * q
+        }\n`;
+    });
     if (selections.customOther > 0)
       text += `▫️ ${t("lineOther")}: $${selections.customOther}\n`;
+    if (selections.removal)
+      text += `▫️ ${priceItemLabel(locale, "removal", selections.removal)}: $${
+        prices.removal[selections.removal]
+      }\n`;
     const discount = getDiscountAmount();
     if (discount > 0)
       text += `----------------------\n🤍 ${t("summaryDiscount")}: -$${discount}\n`;
@@ -1177,11 +1612,34 @@ const App = () => {
   const finalizePayment = () => {
     const total = calculateTotal();
     const itemsSummary = [
+      selections.serviceType
+        ? `${t("lineServiceType")}:${priceItemLabel(
+            locale,
+            "serviceType",
+            selections.serviceType
+          )}`
+        : null,
+      selections.base ? formatBaseSelectionLabel(locale, selections.base) : null,
+      selections.serviceType === SERVICE_TYPE_REFILL && selections.refill
+        ? `${priceItemLabel(locale, "refill", selections.refill)}`
+        : null,
+      ...Object.keys(selections.addons || {})
+        .filter((k) => (selections.addons[k] || 0) > 0)
+        .map(
+          (k) =>
+            `${priceItemLabel(locale, "addons", k)} x${selections.addons[k]}`
+        ),
+      ...selections.spa.map((item) => priceItemLabel(locale, "spa", item)),
+      ...Object.keys(selections.products || {})
+        .filter((k) => (selections.products[k] || 0) > 0)
+        .map(
+          (k) =>
+            `${priceItemLabel(locale, "products", k)} x${selections.products[k]}`
+        ),
+      selections.customOther > 0 ? `${t("lineOther")}` : null,
       selections.removal
         ? priceItemLabel(locale, "removal", selections.removal)
         : null,
-      selections.base ? priceItemLabel(locale, "base", selections.base) : null,
-      ...selections.spa.map((item) => priceItemLabel(locale, "spa", item)),
     ]
       .filter(Boolean)
       .join(", ");
@@ -1204,11 +1662,13 @@ const App = () => {
     setShowModal(false);
     // 重置選擇
     setSelections({
+      serviceType: null,
       removal: null,
       base: null,
+      refill: null,
       addons: {},
       spa: [],
-      customProduct: 0,
+      products: {},
       customOther: 0,
       discountType: "none",
       discountVal: 0,
@@ -1255,9 +1715,41 @@ const App = () => {
     link.click();
   };
 
+  const toggleBaseSelection = (category, style) => {
+    setSelections((prev) => {
+      const cur = prev.base;
+      if (
+        cur &&
+        cur.category === category &&
+        cur.style === style
+      ) {
+        return { ...prev, base: null };
+      }
+      return { ...prev, base: { category, style } };
+    });
+  };
+
+  const setServiceType = (type) => {
+    setSelections((prev) => {
+      const nextType = prev.serviceType === type ? null : type;
+      return {
+        ...prev,
+        serviceType: nextType,
+        refill: nextType === SERVICE_TYPE_REFILL ? prev.refill : null,
+      };
+    });
+  };
+
+  const toggleRefillTier = (key) => {
+    setSelections((prev) => ({
+      ...prev,
+      refill: prev.refill === key ? null : key,
+    }));
+  };
+
   const toggleSelection = (category, item) => {
     setSelections((prev) => {
-      if (category === "removal" || category === "base")
+      if (category === "removal")
         return { ...prev, [category]: prev[category] === item ? null : item };
       if (category === "spa")
         return {
@@ -1271,8 +1763,8 @@ const App = () => {
   };
 
   const getAddonUnitLabel = (addonKey) => {
-    if (addonKey === ROOT_COUNT_ADDON_KEY) return locale === "en" ? "/ root" : "/ 根";
-    if (addonKey === LOWER_LASH_ADDON_KEY) return locale === "en" ? "/ service" : "/ 次";
+    if (addonKey === LOWER_LASH_ADDON_KEY)
+      return locale === "en" ? "/root" : "/根";
     return "";
   };
 
@@ -1319,45 +1811,202 @@ const App = () => {
     });
   };
 
-  const addCustomBaseStyle = () => {
-    const name = newBaseName.trim();
-    const price = Number(newBasePrice);
+  const addCustomProduct = () => {
+    const name = newProductName.trim();
+    const price = Number(newProductPrice);
 
     if (!name) {
-      setBaseFormError(t("errBaseName"));
+      setProductFormError(t("errProductName"));
       return;
     }
 
     if (Number.isNaN(price) || price < 0) {
-      setBaseFormError(t("errPrice"));
+      setProductFormError(t("errPrice"));
       return;
     }
 
-    if (prices.base[name] !== undefined) {
-      setBaseFormError(t("errBaseDup"));
+    if (prices.products[name] !== undefined) {
+      setProductFormError(t("errProductDup"));
       return;
     }
 
     setPrices((prev) => ({
       ...prev,
-      base: { ...prev.base, [name]: price },
+      products: { ...prev.products, [name]: price },
     }));
-    setNewBaseName("");
-    setNewBasePrice("");
-    setBaseFormError("");
+    setNewProductName("");
+    setNewProductPrice("");
+    setProductFormError("");
   };
 
-  const removeCustomBaseStyle = (name) => {
+  const removeCustomProduct = (name) => {
     setPrices((prev) => {
-      const nextBase = { ...prev.base };
-      delete nextBase[name];
-      return { ...prev, base: nextBase };
+      const next = { ...prev.products };
+      delete next[name];
+      return { ...prev, products: next };
     });
 
     setSelections((prev) => {
-      if (prev.base !== name) return prev;
-      return { ...prev, base: null };
+      if (prev.products[name] === undefined) return prev;
+      const nextSel = { ...prev.products };
+      delete nextSel[name];
+      return { ...prev, products: nextSel };
     });
+  };
+
+  const addRefillWeekTier = () => {
+    const name = newRefillWeekName.trim();
+    const price = Number(newRefillWeekPrice);
+    if (!name) {
+      setRefillWeekFormError(t("errRefillTierName"));
+      return;
+    }
+    if (Number.isNaN(price) || price < 0) {
+      setRefillWeekFormError(t("errPrice"));
+      return;
+    }
+    if (prices.refillWeeks[name] !== undefined) {
+      setRefillWeekFormError(t("errRefillTierDup"));
+      return;
+    }
+    setPrices((prev) => ({
+      ...prev,
+      refillWeeks: { ...prev.refillWeeks, [name]: price },
+    }));
+    setNewRefillWeekName("");
+    setNewRefillWeekPrice("");
+    setRefillWeekFormError("");
+  };
+
+  const removeRefillWeekTier = (name) => {
+    setPrices((prev) => {
+      const next = { ...prev.refillWeeks };
+      delete next[name];
+      return { ...prev, refillWeeks: next };
+    });
+    setSelections((prev) =>
+      prev.refill === name ? { ...prev, refill: null } : prev
+    );
+  };
+
+  const addRefillRootTier = () => {
+    const name = newRefillRootName.trim();
+    const price = Number(newRefillRootPrice);
+    if (!name) {
+      setRefillRootFormError(t("errRefillTierName"));
+      return;
+    }
+    if (Number.isNaN(price) || price < 0) {
+      setRefillRootFormError(t("errPrice"));
+      return;
+    }
+    if (prices.refillRoots[name] !== undefined) {
+      setRefillRootFormError(t("errRefillTierDup"));
+      return;
+    }
+    setPrices((prev) => ({
+      ...prev,
+      refillRoots: { ...prev.refillRoots, [name]: price },
+    }));
+    setNewRefillRootName("");
+    setNewRefillRootPrice("");
+    setRefillRootFormError("");
+  };
+
+  const removeRefillRootTier = (name) => {
+    setPrices((prev) => {
+      const next = { ...prev.refillRoots };
+      delete next[name];
+      return { ...prev, refillRoots: next };
+    });
+    setSelections((prev) =>
+      prev.refill === name ? { ...prev, refill: null } : prev
+    );
+  };
+
+  const addBaseCategory = () => {
+    const name = newBaseCategoryName.trim();
+    if (!name) {
+      setBaseFormError(t("errBaseCategoryName"));
+      return;
+    }
+    if (prices.base[name] !== undefined) {
+      setBaseFormError(t("errBaseCategoryDup"));
+      return;
+    }
+    setPrices((prev) => ({
+      ...prev,
+      base: { ...prev.base, [name]: {} },
+    }));
+    setNewBaseCategoryName("");
+    setBaseFormError("");
+    setNewSubStyleCategory(name);
+  };
+
+  const addBaseSubStyle = () => {
+    const cat =
+      newSubStyleCategory.trim() || Object.keys(prices.base)[0] || "";
+    const styleName = newSubStyleName.trim();
+    const price = Number(newSubStylePrice);
+
+    if (!cat) {
+      setBaseFormError(t("errBaseCategoryName"));
+      return;
+    }
+    if (!styleName) {
+      setBaseFormError(t("errBaseSubName"));
+      return;
+    }
+    if (Number.isNaN(price) || price < 0) {
+      setBaseFormError(t("errPrice"));
+      return;
+    }
+    if (prices.base[cat]?.[styleName] !== undefined) {
+      setBaseFormError(t("errBaseSubDup"));
+      return;
+    }
+
+    setPrices((prev) => ({
+      ...prev,
+      base: {
+        ...prev.base,
+        [cat]: { ...(prev.base[cat] || {}), [styleName]: price },
+      },
+    }));
+    setNewSubStyleName("");
+    setNewSubStylePrice("");
+    setBaseFormError("");
+  };
+
+  const removeBaseStyle = (category, styleName) => {
+    setPrices((prev) => {
+      const styles = { ...(prev.base[category] || {}) };
+      delete styles[styleName];
+      return {
+        ...prev,
+        base: { ...prev.base, [category]: styles },
+      };
+    });
+    setSelections((prev) => {
+      const cur = prev.base;
+      if (cur?.category === category && cur?.style === styleName) {
+        return { ...prev, base: null };
+      }
+      return prev;
+    });
+  };
+
+  const removeBaseCategory = (category) => {
+    setPrices((prev) => {
+      const next = { ...prev.base };
+      delete next[category];
+      return { ...prev, base: next };
+    });
+    setSelections((prev) => {
+      if (prev.base?.category === category) return { ...prev, base: null };
+      return prev;
+    });
+    setNewSubStyleCategory((c) => (c === category ? "" : c));
   };
 
   const addCustomRemoval = () => {
@@ -1450,12 +2099,14 @@ const App = () => {
       >
         {title}
       </h2>
-      <span
-        style={{ fontSize: theme.fontSize.label, color: theme.textMuted }}
-        className="font-medium uppercase tracking-widest"
-      >
-        {label}
-      </span>
+      {label ? (
+        <span
+          style={{ fontSize: theme.fontSize.label, color: theme.textMuted }}
+          className="font-medium uppercase tracking-widest"
+        >
+          {label}
+        </span>
+      ) : null}
     </div>
   );
 
@@ -1552,19 +2203,20 @@ const App = () => {
               {greetingLines.line2}
             </span>
           </p>
-          {/* 卸甲服務 */}
+          {/* 1. 服務類型 */}
           <section>
             <SectionHeader
-              title={t("sectionRemovalTitle")}
-              label={t("sectionRemovalLabel")}
+              title={t("sectionServiceTypeTitle")}
+              label={t("sectionServiceTypeLabel")}
             />
             <div className="grid grid-cols-2 gap-3">
-              {Object.keys(prices.removal).map((item) => (
+              {[SERVICE_TYPE_NEW, SERVICE_TYPE_REFILL].map((st) => (
                 <button
-                  key={item}
-                  onClick={() => toggleSelection("removal", item)}
+                  key={st}
+                  type="button"
+                  onClick={() => setServiceType(st)}
                   className={`p-4 rounded-2xl border transition-all ${
-                    selections.removal === item
+                    selections.serviceType === st
                       ? "border-[#BA797D] bg-[#F1DFDC]"
                       : "border-stone-200 bg-white"
                   }`}
@@ -1573,54 +2225,122 @@ const App = () => {
                     style={{ fontSize: theme.fontSize.btnMain }}
                     className="font-bold"
                   >
-                    {priceItemLabel(locale, "removal", item)}
-                  </div>
-                  <div
-                    style={{ fontSize: theme.fontSize.btnSub }}
-                    className="text-[#A99CA0]"
-                  >
-                    ${prices.removal[item]}
+                    {priceItemLabel(locale, "serviceType", st)}
                   </div>
                 </button>
               ))}
             </div>
           </section>
 
-          {/* 款式基礎 */}
-          <section>
-            <SectionHeader
-              title={t("sectionBaseTitle")}
-              label={t("sectionBaseLabel")}
-            />
-            <div className="grid grid-cols-3 gap-2">
-              {Object.keys(prices.base).map((item) => (
-                <button
-                  key={item}
-                  onClick={() => toggleSelection("base", item)}
-                  className={`p-3 rounded-xl border transition-all ${
-                    selections.base === item
-                      ? "border-[#BA797D] bg-[#F1DFDC]"
-                      : "border-stone-200 bg-white"
-                  }`}
-                >
-                  <div
-                    style={{ fontSize: theme.fontSize.baseBtnMain }}
-                    className="font-bold"
-                  >
-                    {priceItemLabel(locale, "base", item)}
+          {/* 2. 款式類別：自然款／濃密款／設計款／客製款 — 各為獨立區塊，子按鈕為根數方案 */}
+          {Object.entries(prices.base).map(([category, styles]) => {
+            const entries = Object.entries(styles);
+            const n = entries.length;
+            const gridClass = getBaseRootButtonGridClass(n);
+            return (
+              <section key={category}>
+                <SectionHeader
+                  title={priceItemLabel(locale, "base", category)}
+                  label={priceItemLabel("en", "base", category)}
+                />
+                {n === 0 ? (
+                  <p className="text-xs text-stone-400 bg-white/80 border border-dashed border-stone-200 rounded-xl px-3 py-2">
+                    {t("baseEmptyHint")}
+                  </p>
+                ) : (
+                  <div className={gridClass}>
+                    {entries.map(([styleName, price]) => (
+                      <button
+                        key={`${category}-${styleName}`}
+                        type="button"
+                        onClick={() => toggleBaseSelection(category, styleName)}
+                        className={`rounded-xl border transition-all ${
+                          n === 1
+                            ? "w-full px-4 py-4 flex flex-row items-center justify-between gap-3 text-left min-h-[52px]"
+                            : "p-3 text-left"
+                        } ${
+                          selections.base?.category === category &&
+                          selections.base?.style === styleName
+                            ? "border-[#BA797D] bg-[#F1DFDC]"
+                            : "border-stone-200 bg-white"
+                        }`}
+                      >
+                        <div
+                          style={{ fontSize: theme.fontSize.baseBtnMain }}
+                          className={`font-bold leading-snug ${
+                            n === 1 ? "flex-1" : ""
+                          }`}
+                        >
+                          {priceItemLabel(locale, "baseStyle", styleName)}
+                        </div>
+                        <div
+                          style={{ fontSize: theme.fontSize.baseBtnSub }}
+                          className="text-[#A99CA0] shrink-0"
+                        >
+                          ${price}
+                        </div>
+                      </button>
+                    ))}
                   </div>
-                  <div
-                    style={{ fontSize: theme.fontSize.baseBtnSub }}
-                    className="text-[#A99CA0]"
-                  >
-                    ${prices.base[item]}
-                  </div>
-                </button>
-              ))}
-            </div>
-          </section>
+                )}
+              </section>
+            );
+          })}
 
-          {/* 加購造型 */}
+          {/* 3. 補睫毛計價（僅選「補睫毛」時；依設定顯示週數或根數方案） */}
+          {selections.serviceType === SERVICE_TYPE_REFILL && (
+            <section>
+              <SectionHeader
+                title={t("sectionRefillPricingTitle")}
+                label={t("sectionRefillPricingLabel")}
+              />
+              {(() => {
+                const activeRefill =
+                  refillPricingMode === REFILL_MODE_WEEKS
+                    ? prices.refillWeeks
+                    : prices.refillRoots;
+                const keys = Object.keys(activeRefill);
+                if (keys.length === 0) {
+                  return (
+                    <p className="text-xs text-stone-400 bg-white/80 border border-dashed border-stone-200 rounded-xl px-3 py-2">
+                      {t("baseEmptyHint")}
+                    </p>
+                  );
+                }
+                return (
+                  <div className="grid grid-cols-2 gap-3">
+                    {keys.map((key) => (
+                      <button
+                        key={key}
+                        type="button"
+                        onClick={() => toggleRefillTier(key)}
+                        className={`p-4 rounded-2xl border transition-all text-left ${
+                          selections.refill === key
+                            ? "border-[#BA797D] bg-[#F1DFDC]"
+                            : "border-stone-200 bg-white"
+                        }`}
+                      >
+                        <div
+                          style={{ fontSize: theme.fontSize.btnMain }}
+                          className="font-bold"
+                        >
+                          {priceItemLabel(locale, "refill", key)}
+                        </div>
+                        <div
+                          style={{ fontSize: theme.fontSize.btnSub }}
+                          className="text-[#A99CA0]"
+                        >
+                          ${activeRefill[key]}
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                );
+              })()}
+            </section>
+          )}
+
+          {/* 4. 加購造型 */}
           <section>
             <SectionHeader
               title={t("sectionAddonsTitle")}
@@ -1646,10 +2366,11 @@ const App = () => {
                       ${prices.addons[item]} {getAddonUnitLabel(item)}
                     </div>
                   </div>
-                  {item === ROOT_COUNT_ADDON_KEY ? (
+                  {item === LOWER_LASH_ADDON_KEY ? (
                     <div className="flex flex-col items-end gap-2">
                       <div className="flex items-center gap-2">
                         <button
+                          type="button"
                           onClick={() =>
                             setSelections((p) => ({
                               ...p,
@@ -1671,7 +2392,7 @@ const App = () => {
                               ...p,
                               addons: {
                                 ...p.addons,
-                                [item]: parseInt(e.target.value) || 0,
+                                [item]: parseInt(e.target.value, 10) || 0,
                               },
                             }))
                           }
@@ -1679,6 +2400,7 @@ const App = () => {
                           className="w-10 text-center font-bold text-[#BA797D] bg-transparent outline-none"
                         />
                         <button
+                          type="button"
                           onClick={() =>
                             setSelections((p) => ({
                               ...p,
@@ -1694,7 +2416,7 @@ const App = () => {
                         </button>
                       </div>
                       <div className="flex gap-2">
-                        {ROOT_COUNT_PRESETS.map((n) => (
+                        {LOWER_LASH_PRESETS.map((n) => (
                           <button
                             key={n}
                             type="button"
@@ -1704,9 +2426,9 @@ const App = () => {
                                 addons: { ...p.addons, [item]: n },
                               }))
                             }
-                            className="px-2 py-1 rounded-lg text-xs font-bold border border-stone-200 text-[#BA797D] hover:bg-[#F1DFDC] transition-colors"
+                            className="px-2 py-1 rounded-lg text-xs font-bold border border-stone-200 text-[#BA797D] hover:bg-[#F1DFDC] transition-colors min-w-[2.25rem] text-center"
                           >
-                            {locale === "en" ? `${n} roots` : `${n} 根`}
+                            {String(n)}
                           </button>
                         ))}
                       </div>
@@ -1714,15 +2436,13 @@ const App = () => {
                   ) : (
                     <div className="flex items-center gap-2">
                       <button
+                        type="button"
                         onClick={() =>
                           setSelections((p) => ({
                             ...p,
                             addons: {
                               ...p.addons,
-                              [item]:
-                                item === LOWER_LASH_ADDON_KEY
-                                  ? 0
-                                  : Math.max(0, (p.addons[item] || 0) - 1),
+                              [item]: Math.max(0, (p.addons[item] || 0) - 1),
                             },
                           }))
                         }
@@ -1738,12 +2458,7 @@ const App = () => {
                             ...p,
                             addons: {
                               ...p.addons,
-                              [item]:
-                                item === LOWER_LASH_ADDON_KEY
-                                  ? (parseInt(e.target.value) || 0) > 0
-                                    ? 1
-                                    : 0
-                                  : parseInt(e.target.value) || 0,
+                              [item]: parseInt(e.target.value, 10) || 0,
                             },
                           }))
                         }
@@ -1751,15 +2466,13 @@ const App = () => {
                         className="w-10 text-center font-bold text-[#BA797D] bg-transparent outline-none"
                       />
                       <button
+                        type="button"
                         onClick={() =>
                           setSelections((p) => ({
                             ...p,
                             addons: {
                               ...p.addons,
-                              [item]:
-                                item === LOWER_LASH_ADDON_KEY
-                                  ? 1
-                                  : (p.addons[item] || 0) + 1,
+                              [item]: (p.addons[item] || 0) + 1,
                             },
                           }))
                         }
@@ -1774,7 +2487,7 @@ const App = () => {
             </div>
           </section>
 
-          {/* 護理保養 */}
+          {/* 5. 護理保養 */}
           <section>
             <SectionHeader
               title={t("sectionSpaTitle")}
@@ -1808,41 +2521,87 @@ const App = () => {
             </div>
           </section>
 
-          {/* 其他加購 */}
+          {/* 6. 產品加購 */}
           <section>
             <SectionHeader
               title={t("sectionOthersTitle")}
               label={t("sectionOthersLabel")}
             />
             <div className="space-y-3">
-              <div className="bg-white p-4 rounded-2xl border border-stone-200 flex justify-between items-center">
-                <div className="flex items-center gap-3">
-                  <div className="bg-stone-100 p-2 rounded-lg text-[#BA797D]">
-                    <Icon name="package" size={18} />
+              {Object.keys(prices.products).map((item) => (
+                <div
+                  key={item}
+                  className="bg-white p-4 rounded-2xl border border-stone-200 flex justify-between items-center"
+                >
+                  <div className="flex items-center gap-3 min-w-0 flex-1">
+                    <div className="bg-stone-100 p-2 rounded-lg text-[#BA797D] shrink-0">
+                      <Icon name="package" size={18} />
+                    </div>
+                    <div className="flex flex-col min-w-0">
+                      <span
+                        style={{ fontSize: theme.fontSize.btnMain }}
+                        className="font-bold truncate"
+                      >
+                        {priceItemLabel(locale, "products", item)}
+                      </span>
+                      <span
+                        style={{ fontSize: theme.fontSize.btnSub }}
+                        className="text-[#A99CA0]"
+                      >
+                        ${prices.products[item]}
+                        {t("perProductUnit")}
+                      </span>
+                    </div>
                   </div>
-                  <span
-                    style={{ fontSize: theme.fontSize.btnMain }}
-                    className="font-bold"
-                  >
-                    {t("otherProduct")}
-                  </span>
+                  <div className="flex items-center gap-2 shrink-0">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setSelections((p) => ({
+                          ...p,
+                          products: {
+                            ...p.products,
+                            [item]: Math.max(0, (p.products[item] || 0) - 1),
+                          },
+                        }))
+                      }
+                      className="w-8 h-8 rounded-lg border border-stone-200 flex items-center justify-center"
+                    >
+                      <Icon name="minus" size={14} />
+                    </button>
+                    <input
+                      type="number"
+                      value={selections.products[item] || 0}
+                      onChange={(e) =>
+                        setSelections((p) => ({
+                          ...p,
+                          products: {
+                            ...p.products,
+                            [item]: parseInt(e.target.value, 10) || 0,
+                          },
+                        }))
+                      }
+                      onFocus={(e) => e.target.select()}
+                      className="w-10 text-center font-bold text-[#BA797D] bg-transparent outline-none"
+                    />
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setSelections((p) => ({
+                          ...p,
+                          products: {
+                            ...p.products,
+                            [item]: (p.products[item] || 0) + 1,
+                          },
+                        }))
+                      }
+                      className="w-8 h-8 rounded-lg bg-[#BA797D] text-white flex items-center justify-center"
+                    >
+                      <Icon name="plus" size={14} />
+                    </button>
+                  </div>
                 </div>
-                <div className="flex items-center gap-1">
-                  <span className="text-stone-400 text-xs">$</span>
-                  <input
-                    type="number"
-                    className="w-20 text-right font-bold text-[#BA797D] bg-stone-50 rounded-lg p-2 focus:outline-none"
-                    value={selections.customProduct || ""}
-                    onChange={(e) =>
-                      setSelections((p) => ({
-                        ...p,
-                        customProduct: parseInt(e.target.value) || 0,
-                      }))
-                    }
-                    onFocus={(e) => e.target.select()}
-                  />
-                </div>
-              </div>
+              ))}
               <div className="bg-white p-4 rounded-2xl border border-stone-200 flex justify-between items-center">
                 <div className="flex items-center gap-3">
                   <div className="bg-stone-100 p-2 rounded-lg text-[#BA797D]">
@@ -1874,7 +2633,42 @@ const App = () => {
             </div>
           </section>
 
-          {/* 優惠折抵 */}
+          {/* 7. 卸除睫毛 */}
+          <section>
+            <SectionHeader
+              title={t("sectionRemovalTitle")}
+              label={t("sectionRemovalLabel")}
+            />
+            <div className="grid grid-cols-2 gap-3">
+              {Object.keys(prices.removal).map((item) => (
+                <button
+                  key={item}
+                  type="button"
+                  onClick={() => toggleSelection("removal", item)}
+                  className={`p-4 rounded-2xl border transition-all ${
+                    selections.removal === item
+                      ? "border-[#BA797D] bg-[#F1DFDC]"
+                      : "border-stone-200 bg-white"
+                  }`}
+                >
+                  <div
+                    style={{ fontSize: theme.fontSize.btnMain }}
+                    className="font-bold"
+                  >
+                    {priceItemLabel(locale, "removal", item)}
+                  </div>
+                  <div
+                    style={{ fontSize: theme.fontSize.btnSub }}
+                    className="text-[#A99CA0]"
+                  >
+                    ${prices.removal[item]}
+                  </div>
+                </button>
+              ))}
+            </div>
+          </section>
+
+          {/* 8. 優惠折抵 */}
           <section className="mb-8">
             <SectionHeader
               title={t("sectionDiscountTitle")}
@@ -2112,7 +2906,9 @@ const App = () => {
             </span>
           </h3>
 
-          {Object.entries(prices).map(([cat, items]) => (
+          {["removal", "base", "addons", "spa", "products"].map((cat) => {
+            const items = prices[cat];
+            return (
             <div
               key={cat}
               className="bg-white p-6 rounded-[2rem] mb-6 border border-stone-50 shadow-sm"
@@ -2120,79 +2916,144 @@ const App = () => {
               <h4 className="text-[10px] font-bold text-stone-400 mb-2 uppercase">
                 {{
                   removal: t("sectionRemovalLabel"),
-                  base: t("sectionBaseLabel"),
+                  base: t("sectionBaseAdminLabel"),
                   addons: t("sectionAddonsLabel"),
                   spa: t("sectionSpaLabel"),
+                  products: t("sectionProductLabel"),
                 }[cat] || cat}
               </h4>
 
-              {Object.entries(items).map(([name, price]) => (
-                <div
-                  key={name}
-                  className="flex justify-between items-baseline py-2 border-b border-stone-100"
-                >
-                  <span className="text-sm font-bold flex-1 pr-2">
-                    {priceItemLabel(locale, cat, name)}
-                  </span>
-                  <div className="flex items-center gap-2">
-                    <input
-                      type="number"
-                      value={price}
-                      onFocus={(e) => e.target.select()}
-                      onChange={(e) =>
-                        setPrices((prev) => ({
-                          ...prev,
-                          [cat]: { ...prev[cat], [name]: Number(e.target.value) },
-                        }))
-                      }
-                      className="w-20 text-center font-bold bg-stone-50 rounded-3xl px-3 py-1 text-[#BA797D] outline-none shadow-sm"
-                    />
-                    {cat === "addons" && (
-                      <button
-                        type="button"
-                        onClick={() => removeCustomAddon(name)}
-                        className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
-                        aria-label={`${t("ariaDeleteAddon")}: ${name}`}
-                      >
-                        <Icon name="trash" size={14} />
-                      </button>
-                    )}
+              {cat !== "base" ? (
+                Object.entries(items).map(([name, price]) => (
+                  <div
+                    key={name}
+                    className="flex justify-between items-baseline py-2 border-b border-stone-100"
+                  >
+                    <span className="text-sm font-bold flex-1 pr-2">
+                      {priceItemLabel(locale, cat, name)}
+                    </span>
+                    <div className="flex items-center gap-2">
+                      <input
+                        type="number"
+                        value={price}
+                        onFocus={(e) => e.target.select()}
+                        onChange={(e) =>
+                          setPrices((prev) => ({
+                            ...prev,
+                            [cat]: {
+                              ...prev[cat],
+                              [name]: Number(e.target.value),
+                            },
+                          }))
+                        }
+                        className="w-20 text-center font-bold bg-stone-50 rounded-3xl px-3 py-1 text-[#BA797D] outline-none shadow-sm"
+                      />
+                      {cat === "addons" && (
+                        <button
+                          type="button"
+                          onClick={() => removeCustomAddon(name)}
+                          className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
+                          aria-label={`${t("ariaDeleteAddon")}: ${name}`}
+                        >
+                          <Icon name="trash" size={14} />
+                        </button>
+                      )}
 
-                    {cat === "base" && (
-                      <button
-                        type="button"
-                        onClick={() => removeCustomBaseStyle(name)}
-                        className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
-                        aria-label={`${t("ariaDeleteBase")}: ${name}`}
-                      >
-                        <Icon name="trash" size={14} />
-                      </button>
-                    )}
+                      {cat === "products" && (
+                        <button
+                          type="button"
+                          onClick={() => removeCustomProduct(name)}
+                          className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
+                          aria-label={`${t("ariaDeleteProduct")}: ${name}`}
+                        >
+                          <Icon name="trash" size={14} />
+                        </button>
+                      )}
 
-                    {cat === "removal" && (
-                      <button
-                        type="button"
-                        onClick={() => removeCustomRemoval(name)}
-                        className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
-                        aria-label={`${t("ariaDeleteRemoval")}: ${name}`}
-                      >
-                        <Icon name="trash" size={14} />
-                      </button>
-                    )}
+                      {cat === "removal" && (
+                        <button
+                          type="button"
+                          onClick={() => removeCustomRemoval(name)}
+                          className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
+                          aria-label={`${t("ariaDeleteRemoval")}: ${name}`}
+                        >
+                          <Icon name="trash" size={14} />
+                        </button>
+                      )}
 
-                    {cat === "spa" && (
-                      <button
-                        type="button"
-                        onClick={() => removeCustomSpa(name)}
-                        className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
-                        aria-label={`${t("ariaDeleteSpa")}: ${name}`}
-                      >
-                        <Icon name="trash" size={14} />
-                      </button>
-                    )}
+                      {cat === "spa" && (
+                        <button
+                          type="button"
+                          onClick={() => removeCustomSpa(name)}
+                          className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
+                          aria-label={`${t("ariaDeleteSpa")}: ${name}`}
+                        >
+                          <Icon name="trash" size={14} />
+                        </button>
+                      )}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))
+              ) : (
+                Object.entries(items).map(([category, styles]) => (
+                  <div
+                    key={category}
+                    className="mb-4 pb-4 border-b border-stone-100 last:mb-0 last:pb-0 last:border-0"
+                  >
+                    <div className="flex justify-between items-center gap-2 mb-2">
+                      <span className="text-sm font-bold text-[#9E606F]">
+                        {priceItemLabel(locale, "base", category)}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => removeBaseCategory(category)}
+                        className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors shrink-0"
+                        aria-label={`${t("ariaDeleteBaseCategory")}: ${category}`}
+                      >
+                        <Icon name="trash" size={14} />
+                      </button>
+                    </div>
+                    {Object.entries(styles).map(([styleName, price]) => (
+                      <div
+                        key={styleName}
+                        className="flex justify-between items-baseline py-2 border-b border-stone-50"
+                      >
+                        <span className="text-sm font-bold flex-1 pr-2 pl-1">
+                          {priceItemLabel(locale, "baseStyle", styleName)}
+                        </span>
+                        <div className="flex items-center gap-2">
+                          <input
+                            type="number"
+                            value={price}
+                            onFocus={(e) => e.target.select()}
+                            onChange={(e) =>
+                              setPrices((prev) => ({
+                                ...prev,
+                                base: {
+                                  ...prev.base,
+                                  [category]: {
+                                    ...prev.base[category],
+                                    [styleName]: Number(e.target.value),
+                                  },
+                                },
+                              }))
+                            }
+                            className="w-20 text-center font-bold bg-stone-50 rounded-3xl px-3 py-1 text-[#BA797D] outline-none shadow-sm"
+                          />
+                          <button
+                            type="button"
+                            onClick={() => removeBaseStyle(category, styleName)}
+                            className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
+                            aria-label={`${t("ariaDeleteBase")}: ${styleName}`}
+                          >
+                            <Icon name="trash" size={14} />
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ))
+              )}
 
               {cat === "addons" && (
                 <div className="mt-4 pt-4 border-t border-dashed border-stone-200">
@@ -2241,20 +3102,20 @@ const App = () => {
                 </div>
               )}
 
-              {cat === "base" && (
+              {cat === "products" && (
                 <div className="mt-4 pt-4 border-t border-dashed border-stone-200">
                   <p className="text-[10px] font-bold text-stone-400 mb-3 uppercase tracking-widest">
-                    {t("newBaseTitle")}
+                    {t("newProductTitle")}
                   </p>
                   <div className="flex gap-2 mb-2">
                     <input
                       type="text"
-                      value={newBaseName}
+                      value={newProductName}
                       onChange={(e) => {
-                        setNewBaseName(e.target.value);
-                        if (baseFormError) setBaseFormError("");
+                        setNewProductName(e.target.value);
+                        if (productFormError) setProductFormError("");
                       }}
-                      placeholder={t("baseNamePh")}
+                      placeholder={t("productNamePh")}
                       className="flex-1 text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2 text-[#9E606F] outline-none border border-stone-100 focus:border-[#BA797D]"
                     />
                     <div className="w-24 flex items-center gap-1 min-w-0">
@@ -2262,29 +3123,130 @@ const App = () => {
                       <input
                         type="number"
                         min="0"
-                        value={newBasePrice}
+                        value={newProductPrice}
                         onFocus={(e) => e.target.select()}
                         onChange={(e) => {
-                          setNewBasePrice(e.target.value);
-                          if (baseFormError) setBaseFormError("");
+                          setNewProductPrice(e.target.value);
+                          if (productFormError) setProductFormError("");
                         }}
                         placeholder="0"
-                      className="w-0 flex-1 text-sm font-bold bg-stone-50 rounded-2xl py-2 text-center text-[#BA797D] outline-none border border-stone-100 focus:border-[#BA797D] min-w-0"
+                        className="w-0 flex-1 text-sm font-bold bg-stone-50 rounded-2xl py-2 text-center text-[#BA797D] outline-none border border-stone-100 focus:border-[#BA797D] min-w-0"
                       />
                     </div>
                   </div>
-                  {baseFormError && (
+                  {productFormError && (
                     <p className="text-[11px] text-rose-500 font-medium mb-2">
-                      {baseFormError}
+                      {productFormError}
                     </p>
                   )}
                   <button
                     type="button"
-                    onClick={addCustomBaseStyle}
+                    onClick={addCustomProduct}
                     className="w-full py-2.5 rounded-2xl bg-[#BA797D] text-white text-sm font-bold shadow-sm"
                   >
                     {t("addItem")}
                   </button>
+                </div>
+              )}
+
+              {cat === "base" && (
+                <div className="mt-4 pt-4 border-t border-dashed border-stone-200 space-y-6">
+                  <div>
+                    <p className="text-[10px] font-bold text-stone-400 mb-3 uppercase tracking-widest">
+                      {t("newBaseCategoryTitle")}
+                    </p>
+                    <div className="flex gap-2 mb-2">
+                      <input
+                        type="text"
+                        value={newBaseCategoryName}
+                        onChange={(e) => {
+                          setNewBaseCategoryName(e.target.value);
+                          if (baseFormError) setBaseFormError("");
+                        }}
+                        placeholder={t("baseCategoryPh")}
+                        className="flex-1 text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2 text-[#9E606F] outline-none border border-stone-100 focus:border-[#BA797D]"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      onClick={addBaseCategory}
+                      className="w-full py-2.5 rounded-2xl bg-[#BA797D] text-white text-sm font-bold shadow-sm"
+                    >
+                      {t("addItem")}
+                    </button>
+                  </div>
+
+                  <div>
+                    <p className="text-[10px] font-bold text-stone-400 mb-3 uppercase tracking-widest">
+                      {t("newBaseTitle")}
+                    </p>
+                    <label className="text-[10px] font-bold text-stone-400 mb-1 block">
+                      {t("baseSubCategoryLabel")}
+                    </label>
+                    <select
+                      value={
+                        newSubStyleCategory ||
+                        Object.keys(prices.base)[0] ||
+                        ""
+                      }
+                      onChange={(e) => {
+                        setNewSubStyleCategory(e.target.value);
+                        if (baseFormError) setBaseFormError("");
+                      }}
+                      className="w-full text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2.5 text-[#9E606F] outline-none border border-stone-100 focus:border-[#BA797D] mb-2"
+                    >
+                      {Object.keys(prices.base).length === 0 ? (
+                        <option value="">{t("baseCategoryPh")}</option>
+                      ) : (
+                        Object.keys(prices.base).map((k) => (
+                          <option key={k} value={k}>
+                            {priceItemLabel(locale, "base", k)}
+                          </option>
+                        ))
+                      )}
+                    </select>
+                    <div className="flex gap-2 mb-2">
+                      <input
+                        type="text"
+                        value={newSubStyleName}
+                        onChange={(e) => {
+                          setNewSubStyleName(e.target.value);
+                          if (baseFormError) setBaseFormError("");
+                        }}
+                        placeholder={t("baseNamePh")}
+                        className="flex-1 text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2 text-[#9E606F] outline-none border border-stone-100 focus:border-[#BA797D]"
+                      />
+                      <div className="w-24 flex items-center gap-1 min-w-0">
+                        <span className="text-stone-400 text-xs font-bold flex-none">
+                          $
+                        </span>
+                        <input
+                          type="number"
+                          min="0"
+                          value={newSubStylePrice}
+                          onFocus={(e) => e.target.select()}
+                          onChange={(e) => {
+                            setNewSubStylePrice(e.target.value);
+                            if (baseFormError) setBaseFormError("");
+                          }}
+                          placeholder="0"
+                          className="w-0 flex-1 text-sm font-bold bg-stone-50 rounded-2xl py-2 text-center text-[#BA797D] outline-none border border-stone-100 focus:border-[#BA797D] min-w-0"
+                        />
+                      </div>
+                    </div>
+                    {baseFormError && (
+                      <p className="text-[11px] text-rose-500 font-medium mb-2">
+                        {baseFormError}
+                      </p>
+                    )}
+                    <button
+                      type="button"
+                      onClick={addBaseSubStyle}
+                      className="w-full py-2.5 rounded-2xl bg-[#BA797D] text-white text-sm font-bold shadow-sm"
+                    >
+                      {t("addItem")}
+                    </button>
+                  </div>
                 </div>
               )}
 
@@ -2382,7 +3344,199 @@ const App = () => {
                 </div>
               )}
             </div>
-          ))}
+            );
+          })}
+          <div className="bg-white p-6 rounded-[2rem] mb-6 border border-stone-50 shadow-sm">
+            <h4 className="text-[10px] font-bold text-stone-400 mb-2 uppercase">
+              {t("refillPricingSettingsTitle")}
+            </h4>
+            <p className="text-[10px] text-stone-400 mb-3 leading-relaxed">
+              {t("refillPricingModeHint")}
+            </p>
+            <label className="text-[10px] font-bold text-stone-400 mb-1 block uppercase tracking-widest">
+              {t("sectionRefillPricingTitle")}
+            </label>
+            <select
+              value={refillPricingMode}
+              onChange={(e) =>
+                setRefillPricingMode(
+                  e.target.value === REFILL_MODE_ROOTS
+                    ? REFILL_MODE_ROOTS
+                    : REFILL_MODE_WEEKS
+                )
+              }
+              className="w-full text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2.5 text-[#9E606F] mb-4 outline-none border border-stone-100 focus:border-[#BA797D]"
+            >
+              <option value={REFILL_MODE_WEEKS}>{t("refillModeWeeks")}</option>
+              <option value={REFILL_MODE_ROOTS}>{t("refillModeRoots")}</option>
+            </select>
+
+            <p className="text-[10px] font-bold text-stone-400 mb-2 uppercase tracking-widest">
+              {t("refillModeWeeks")}
+            </p>
+            {Object.entries(prices.refillWeeks).map(([name, price]) => (
+              <div
+                key={name}
+                className="flex justify-between items-baseline py-2 border-b border-stone-100"
+              >
+                <span className="text-sm font-bold flex-1 pr-2">
+                  {priceItemLabel(locale, "refill", name)}
+                </span>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="number"
+                    value={price}
+                    onFocus={(e) => e.target.select()}
+                    onChange={(e) =>
+                      setPrices((prev) => ({
+                        ...prev,
+                        refillWeeks: {
+                          ...prev.refillWeeks,
+                          [name]: Number(e.target.value),
+                        },
+                      }))
+                    }
+                    className="w-20 text-center font-bold bg-stone-50 rounded-3xl px-3 py-1 text-[#BA797D] outline-none shadow-sm"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => removeRefillWeekTier(name)}
+                    className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
+                    aria-label={`${t("ariaDeleteRefillWeek")}: ${name}`}
+                  >
+                    <Icon name="trash" size={14} />
+                  </button>
+                </div>
+              </div>
+            ))}
+            <div className="mt-3 pt-3 border-t border-dashed border-stone-200">
+              <p className="text-[10px] font-bold text-stone-400 mb-2 uppercase tracking-widest">
+                {t("newRefillWeekTitle")}
+              </p>
+              <div className="flex gap-2 mb-2">
+                <input
+                  type="text"
+                  value={newRefillWeekName}
+                  onChange={(e) => {
+                    setNewRefillWeekName(e.target.value);
+                    if (refillWeekFormError) setRefillWeekFormError("");
+                  }}
+                  placeholder={t("refillTierNamePh")}
+                  className="flex-1 text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2 text-[#9E606F] outline-none border border-stone-100 focus:border-[#BA797D]"
+                />
+                <div className="w-24 flex items-center gap-1 min-w-0">
+                  <span className="text-stone-400 text-xs font-bold flex-none">$</span>
+                  <input
+                    type="number"
+                    min="0"
+                    value={newRefillWeekPrice}
+                    onFocus={(e) => e.target.select()}
+                    onChange={(e) => {
+                      setNewRefillWeekPrice(e.target.value);
+                      if (refillWeekFormError) setRefillWeekFormError("");
+                    }}
+                    placeholder="0"
+                    className="w-0 flex-1 text-sm font-bold bg-stone-50 rounded-2xl py-2 text-center text-[#BA797D] outline-none border border-stone-100 focus:border-[#BA797D] min-w-0"
+                  />
+                </div>
+              </div>
+              {refillWeekFormError && (
+                <p className="text-[11px] text-rose-500 font-medium mb-2">
+                  {refillWeekFormError}
+                </p>
+              )}
+              <button
+                type="button"
+                onClick={addRefillWeekTier}
+                className="w-full py-2.5 rounded-2xl bg-[#BA797D] text-white text-sm font-bold shadow-sm"
+              >
+                {t("addItem")}
+              </button>
+            </div>
+
+            <p className="text-[10px] font-bold text-stone-400 mb-2 mt-6 uppercase tracking-widest">
+              {t("refillModeRoots")}
+            </p>
+            {Object.entries(prices.refillRoots).map(([name, price]) => (
+              <div
+                key={name}
+                className="flex justify-between items-baseline py-2 border-b border-stone-100"
+              >
+                <span className="text-sm font-bold flex-1 pr-2">
+                  {priceItemLabel(locale, "refill", name)}
+                </span>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="number"
+                    value={price}
+                    onFocus={(e) => e.target.select()}
+                    onChange={(e) =>
+                      setPrices((prev) => ({
+                        ...prev,
+                        refillRoots: {
+                          ...prev.refillRoots,
+                          [name]: Number(e.target.value),
+                        },
+                      }))
+                    }
+                    className="w-20 text-center font-bold bg-stone-50 rounded-3xl px-3 py-1 text-[#BA797D] outline-none shadow-sm"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => removeRefillRootTier(name)}
+                    className="w-8 h-8 rounded-xl border border-stone-200 text-stone-400 hover:text-rose-500 hover:border-rose-200 flex items-center justify-center transition-colors"
+                    aria-label={`${t("ariaDeleteRefillRoot")}: ${name}`}
+                  >
+                    <Icon name="trash" size={14} />
+                  </button>
+                </div>
+              </div>
+            ))}
+            <div className="mt-3 pt-3 border-t border-dashed border-stone-200">
+              <p className="text-[10px] font-bold text-stone-400 mb-2 uppercase tracking-widest">
+                {t("newRefillRootTitle")}
+              </p>
+              <div className="flex gap-2 mb-2">
+                <input
+                  type="text"
+                  value={newRefillRootName}
+                  onChange={(e) => {
+                    setNewRefillRootName(e.target.value);
+                    if (refillRootFormError) setRefillRootFormError("");
+                  }}
+                  placeholder={t("refillTierNamePh")}
+                  className="flex-1 text-sm font-bold bg-stone-50 rounded-2xl px-3 py-2 text-[#9E606F] outline-none border border-stone-100 focus:border-[#BA797D]"
+                />
+                <div className="w-24 flex items-center gap-1 min-w-0">
+                  <span className="text-stone-400 text-xs font-bold flex-none">$</span>
+                  <input
+                    type="number"
+                    min="0"
+                    value={newRefillRootPrice}
+                    onFocus={(e) => e.target.select()}
+                    onChange={(e) => {
+                      setNewRefillRootPrice(e.target.value);
+                      if (refillRootFormError) setRefillRootFormError("");
+                    }}
+                    placeholder="0"
+                    className="w-0 flex-1 text-sm font-bold bg-stone-50 rounded-2xl py-2 text-center text-[#BA797D] outline-none border border-stone-100 focus:border-[#BA797D] min-w-0"
+                  />
+                </div>
+              </div>
+              {refillRootFormError && (
+                <p className="text-[11px] text-rose-500 font-medium mb-2">
+                  {refillRootFormError}
+                </p>
+              )}
+              <button
+                type="button"
+                onClick={addRefillRootTier}
+                className="w-full py-2.5 rounded-2xl bg-[#BA797D] text-white text-sm font-bold shadow-sm"
+              >
+                {t("addItem")}
+              </button>
+            </div>
+          </div>
           <button
             onClick={() => setView("calculator")}
             className="w-full p-4 bg-[#BA797D] text-white rounded-[1.25rem] font-bold shadow-lg"
